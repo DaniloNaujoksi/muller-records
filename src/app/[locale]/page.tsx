@@ -173,7 +173,7 @@ function MerchTeaser() {
 
   return (
     <section className="scanlines relative overflow-hidden py-24 md:py-32">
-      <VinylBackdrop />
+      <VinylBackdrop opacityClassName="opacity-19" />
       <div aria-hidden className="grid-rules pointer-events-none absolute inset-0 opacity-30" />
       <Container wide className="relative">
         <Reveal>
