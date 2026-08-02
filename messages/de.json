@@ -30,8 +30,7 @@
       "label": "Roster",
       "title": "Wer hier veröffentlicht hat",
       "body": "Detroit, Tokio, Grenoble, New York, Berlin. Das Label hatte nie einen House-Sound, sondern einen Maßstab — Platten, die um drei Uhr nachts funktionieren und am Nachmittag danach über Kopfhörer immer noch stehen.",
-      "cta": "Alle Artists",
-      "remix": "Remix"
+      "cta": "Alle Artists"
     },
     "imprints": {
       "label": "Die Imprints"
@@ -71,10 +70,10 @@
     "title": "Artists",
     "lede": "{count} Namen haben eine Platte oder einen Remix auf einem Müller-Imprint veröffentlicht. Einige davon definieren ganze Städte dieser Musik.",
     "heroPhotoAlt": "Takkyu Ishino in einem Club, hinter ihm Spiegelkugellicht über den ganzen Raum",
-    "releasedHere": "Auf dem Label veröffentlicht",
-    "remixedHere": "Für das Label remixt",
-    "remixNote": "Remix-Credits, bewusst getrennt von vollen Releases — ein Remix ist eine andere Art von Verhältnis zu einem Label, und beides verdient eine saubere Benennung.",
-    "remix": "Remix"
+    "known": "Namen, die du schon kennst",
+    "everyone": "Alle",
+    "count": "{count} Artists",
+    "orderNote": "In der Reihenfolge des Labels, grob entlang der Katalog-Geschichte statt alphabetisch."
   },
   "catalog": {
     "label": "Katalog",

@@ -68,7 +68,7 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
         </Container>
       </section>
 
-      <Marquee items={artists.map((a) => a.name)} durationSeconds={90} reverse />
+      <Marquee items={artists.map((a) => a.name)} durationSeconds={artists.length * 4} reverse />
 
       <section className="border-b border-rule py-24 md:py-32">
         <Container wide>

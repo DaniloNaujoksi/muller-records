@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/sections/PageHero";
-import { ArtistGrid } from "@/components/sections/ArtistGrid";
-import { artists, artistCount } from "@/data/artists";
+import { ArtistGrid, ArtistList } from "@/components/sections/ArtistGrid";
+import { artists, artistCount, headlineArtists } from "@/data/artists";
 import takkyu from "@/assets/photos/takkyu-ishino.jpg";
 
 export async function generateMetadata({
@@ -24,9 +24,6 @@ export default async function ArtistsPage({ params }: { params: Promise<{ locale
 
   const t = await getTranslations("artists");
 
-  const releaseArtists = artists.filter((a) => a.role === "release");
-  const remixArtists = artists.filter((a) => a.role === "remix");
-
   return (
     <>
       <PageHero
@@ -42,19 +39,22 @@ export default async function ArtistsPage({ params }: { params: Promise<{ locale
 
       <section className="border-b border-rule py-20">
         <Container wide>
-          <h2 className="type-heading text-3xl md:text-4xl">{t("releasedHere")}</h2>
+          <h2 className="type-heading text-3xl md:text-4xl">{t("known")}</h2>
           <div className="mt-10">
-            <ArtistGrid items={releaseArtists} remixLabel={t("remix")} />
+            <ArtistGrid items={headlineArtists} />
           </div>
         </Container>
       </section>
 
       <section className="py-20">
         <Container wide>
-          <h2 className="type-heading text-3xl md:text-4xl">{t("remixedHere")}</h2>
-          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-mute">{t("remixNote")}</p>
+          <div className="flex flex-wrap items-baseline gap-4">
+            <h2 className="type-heading text-3xl md:text-4xl">{t("everyone")}</h2>
+            <span className="type-label text-mute">{t("count", { count: artistCount })}</span>
+          </div>
+          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-mute">{t("orderNote")}</p>
           <div className="mt-10">
-            <ArtistGrid items={remixArtists} remixLabel={t("remix")} />
+            <ArtistList items={artists} />
           </div>
         </Container>
       </section>

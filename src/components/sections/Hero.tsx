@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
-import { LogoMark } from "@/components/ui/Logo";
+import { LogoWordmark } from "@/components/ui/Logo";
 import { VinylBackdrop } from "@/components/ui/VinylBackdrop";
 import { SITE } from "@/lib/constants";
 import studio from "@/assets/photos/beroshima-studio.webp";
@@ -51,9 +51,15 @@ export function Hero() {
       </Container>
 
       <Container wide className="relative">
-        <h1 className="type-display text-[clamp(3.5rem,13vw,13rem)]">
-          <span className="block">Müller</span>
-          <span className="block text-blood">Records</span>
+        {/*
+          The drawn wordmark, not type. It is the label's own lettering and the
+          previous headline was only ever an approximation of it in Archivo.
+          Sized by height because the artwork is a fixed 4.56:1 — `w-auto` then
+          takes care of the width at every breakpoint.
+        */}
+        <h1>
+          <LogoWordmark className="h-[clamp(3rem,14vw,13rem)] text-paper" />
+          <span className="sr-only">Müller Records</span>
         </h1>
         <p className="mt-8 max-w-2xl text-base leading-relaxed text-dim md:text-lg">
           {t("lede")}

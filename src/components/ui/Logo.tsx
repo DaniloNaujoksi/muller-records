@@ -28,17 +28,7 @@ export function LogoWordmark({ className }: { className?: string }) {
   return <WordmarkSvg aria-hidden className={clsx("block w-auto", className)} />;
 }
 
-/**
- * The lockup: head plus wordmark, as it appears on the sleeves. `compact` drops
- * the wordmark for tight spaces, and it is hidden below `sm` regardless.
- */
-export function Logo({ className, compact = false }: { className?: string; compact?: boolean }) {
-  return (
-    <span className={clsx("flex items-center gap-3", className)}>
-      <MarkSvg role="img" aria-label="Müller Records" className="block h-9 w-auto shrink-0" />
-      {/* Larger than the original lockup's ratio, where the wordmark is a sixth
-          of the head and would land at 6px here — unreadable in a header. */}
-      {!compact && <LogoWordmark className="hidden h-7 sm:block" />}
-    </span>
-  );
-}
+// There is deliberately no combined lockup component. The head and the wordmark
+// never appear side by side on this site: the wordmark carries the homepage
+// headline and the head carries the navigation, so putting both in the bar read
+// as a stutter.

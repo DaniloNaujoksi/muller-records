@@ -30,7 +30,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         the first thing on the page on purpose: the names are the label's
         strongest argument, and they land before a single line of copy is read.
       */}
-      <Marquee items={artists.map((a) => a.name)} durationSeconds={80} />
+      {/* Duration scales with the roster: the track is one loop of every name,
+          so a fixed duration would whip past now that there are a hundred of
+          them. Roughly 3.5s per name keeps the speed it had at 23. */}
+      <Marquee items={artists.map((a) => a.name)} durationSeconds={artists.length * 3.5} />
 
       <Hero />
       <StatBand />
@@ -44,7 +47,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </div>
         <p className="mt-8 max-w-2xl text-base leading-relaxed text-dim">{t("artists.body")}</p>
         <div className="mt-14">
-          <ArtistGrid items={headlineArtists} remixLabel={t("artists.remix")} />
+          <ArtistGrid items={headlineArtists} />
         </div>
       </Section>
 

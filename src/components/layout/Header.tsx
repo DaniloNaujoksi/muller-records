@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { clsx } from "clsx";
 import { Menu, X } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
-import { Logo } from "@/components/ui/Logo";
+import { LogoMark } from "@/components/ui/Logo";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import type { AppPathname } from "@/i18n/routing";
 
@@ -25,8 +25,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-rule bg-ink/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-[1800px] items-center justify-between px-6 md:px-10">
+        {/* Head only. The wordmark now carries the homepage headline, and
+            repeating it in the bar next to it read as a stutter. */}
         <Link href="/" className="shrink-0" onClick={() => setOpen(false)}>
-          <Logo />
+          <LogoMark className="h-9 text-paper" />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label={t("primary")}>

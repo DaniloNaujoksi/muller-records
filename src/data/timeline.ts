@@ -26,10 +26,14 @@ export const timeline: TimelineEntry[] = [
   { id: "madMusician", year: 2020, major: true },
 ];
 
+import { artistCount } from "./artists";
+
 /** Numbers for the stat band. Deliberately conservative — undercount beats overclaim. */
 export const stats = {
   yearsRunning: new Date().getFullYear() - 1996,
   releasesDocumented: 100,
-  artists: 20,
+  // Derived, not typed in: the roster is the number, and a hand-kept copy of it
+  // here would drift the moment a name is added.
+  artists: artistCount,
   imprints: 4,
 } as const;
