@@ -4,8 +4,11 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/sections/PageHero";
 import { Timeline } from "@/components/sections/Timeline";
 import { Marquee } from "@/components/ui/Marquee";
+import { Photo } from "@/components/ui/Photo";
 import { artists } from "@/data/artists";
 import { LINKS } from "@/lib/constants";
+import tape from "@/assets/photos/beroshima-tape.jpeg";
+import recordsWall from "@/assets/photos/beroshima-records-wall.jpg";
 
 export async function generateMetadata({
   params,
@@ -30,7 +33,25 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
 
       <section className="border-b border-rule py-20 md:py-28">
         <Container wide>
-          <Timeline />
+          {/* The timeline runs long, so the two photographs sit in a sticky
+              column beside it rather than interrupting the sequence. */}
+          <div className="grid gap-14 lg:grid-cols-[1.4fr_1fr] lg:gap-20">
+            <Timeline />
+            <div className="order-first space-y-10 lg:sticky lg:top-28 lg:order-last lg:self-start">
+              <Photo
+                src={tape}
+                alt={t("photos.tapeAlt")}
+                caption={t("photos.tapeCaption")}
+                sizes="(min-width: 1024px) 33vw, 100vw"
+              />
+              <Photo
+                src={recordsWall}
+                alt={t("photos.wallAlt")}
+                caption={t("photos.wallCaption")}
+                sizes="(min-width: 1024px) 33vw, 100vw"
+              />
+            </div>
+          </div>
         </Container>
       </section>
 

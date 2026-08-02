@@ -54,7 +54,9 @@
       "quote": "Started in a Berlin that was still deciding what it was going to be.",
       "bodyOne": "Frank Müller moved to Berlin in 1992, a trained mechanical engineer who had been DJing since the mid-eighties. Acid Orange followed in 1993 and ran twenty records deep, including Toktok's debut single. Müller Records opened in 1996.",
       "bodyTwo": "What followed was thirty years of records that refused to pick a lane: Detroit techno, acid, new wave melody, and a permanent open line to Tokyo, where Beroshima plays to rooms most European producers never see.",
-      "cta": "The full story"
+      "cta": "The full story",
+      "portraitAlt": "Frank Müller as Beroshima, in sunglasses and a red jacket, lit from behind",
+      "portraitCaption": "Frank Müller · Beroshima"
     },
     "merch": {
       "label": "Merch",
@@ -94,6 +96,12 @@
     "label": "History",
     "title": "History & impact",
     "lede": "Thirty years of a Berlin label, told through the records that changed what it was.",
+    "photos": {
+      "tapeAlt": "Frank Müller at a reel-to-reel tape machine, in a suit and tie",
+      "tapeCaption": "Tape, still",
+      "wallAlt": "Frank Müller shielding his eyes, standing in front of a wall of records",
+      "wallCaption": "In front of the catalogue"
+    },
     "entries": {
       "dj": {
         "title": "First records, first rooms",

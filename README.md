@@ -42,11 +42,27 @@ Everything factual sits in `src/data/`:
 Prose for the timeline and merch lives in `messages/*.json` under matching keys,
 so both languages stay in step.
 
+## Logo and photography
+
+The label's mark and wordmark were vector-traced from the original artwork into
+`src/assets/logo-mark.svg` and `logo-wordmark.svg`, both carrying
+`fill="currentColor"` so a single asset renders white in the header, grey in the
+merch tiles and red on hover. `src/app/icon.svg` (the favicon) is generated from
+the same mark. Copies sit in `public/` for anything that needs a plain URL.
+
+SVGs import as React components through `@svgr/webpack`, wired up in
+`next.config.ts`. `LogoMark` and `LogoWordmark` deliberately set no height —
+callers own the size, because a default `h-auto` in the component wins over a
+caller's `h-9` (same stylesheet, source order decides) and silently blew the
+header logo up to full width.
+
+Press photographs live in `src/assets/photos/` and always render through
+`Photo` (or the hero's own layer), which forces grayscale and extra contrast.
+Full-colour photography would compete with the one-red rule, and desaturating
+also hides how differently the source shots were graded.
+
 ## Open items
 
-- **Logo.** `src/components/ui/Logo.tsx` renders a placeholder mark. Drop Frank's
-  artwork in `public/logo.svg` and change that one component — everything else
-  sizes the logo through `className`.
 - **Catalogue completeness.** The listing is compiled from Bandcamp, Wikipedia,
   laut.de and RA. Discogs blocks automated reads, so the pre-2000 records are
   thin and most years are unverified (`verified: false` renders as `—` rather
@@ -54,7 +70,8 @@ so both languages stay in step.
 - **Merch.** Showcase only, by design: `buyUrl` hands off to an external shop and
   items without one render as "coming soon". No cart, no payment, no VAT logic in
   this codebase until the label actually wants a shop here.
-- **Photography.** Product shots and any hero imagery are still missing; the
-  placeholders are logo-on-black and read as intentional in the meantime.
+- **Photography.** Product shots are still missing; merch tiles fall back to the
+  mark on black. The four press photos are low resolution (400–1024px wide),
+  which is fine at current sizes but will not survive a full-bleed treatment.
 - **Legal.** Impressum and Datenschutz pages are required before this goes live
   in Germany. Not written yet — they need real address and contact data.

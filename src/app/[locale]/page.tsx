@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { Marquee } from "@/components/ui/Marquee";
 import { Reveal } from "@/components/ui/Reveal";
+import { Photo } from "@/components/ui/Photo";
 import { Hero } from "@/components/sections/Hero";
 import { StatBand } from "@/components/sections/StatBand";
 import { ArtistGrid } from "@/components/sections/ArtistGrid";
@@ -13,6 +14,7 @@ import { CatalogTable } from "@/components/sections/CatalogTable";
 import { artists, headlineArtists } from "@/data/artists";
 import { releases, imprints, type Imprint } from "@/data/catalog";
 import { LINKS } from "@/lib/constants";
+import portrait from "@/assets/photos/beroshima-portrait.webp";
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -128,7 +130,7 @@ function ImprintStrip() {
   );
 }
 
-/** History teaser. Big pull quote, one link out. */
+/** History teaser. Pull quote, the portrait, one link out. */
 function StoryBlock() {
   const t = useTranslations("home.story");
 
@@ -140,12 +142,20 @@ function StoryBlock() {
           <blockquote className="type-heading mt-10 max-w-5xl text-[clamp(2rem,5.5vw,4.5rem)]">
             {t("quote")}
           </blockquote>
-          <div className="mt-12 grid gap-10 border-t border-rule pt-10 md:grid-cols-2">
-            <p className="text-base leading-relaxed text-dim">{t("bodyOne")}</p>
-            <p className="text-base leading-relaxed text-dim">{t("bodyTwo")}</p>
-          </div>
-          <div className="mt-12">
-            <ArrowLink href="/history">{t("cta")}</ArrowLink>
+          <div className="mt-12 grid gap-12 border-t border-rule pt-12 md:grid-cols-[1fr_1.1fr] md:items-start">
+            <Photo
+              src={portrait}
+              alt={t("portraitAlt")}
+              caption={t("portraitCaption")}
+              sizes="(min-width: 768px) 45vw, 100vw"
+            />
+            <div className="space-y-6">
+              <p className="text-base leading-relaxed text-dim">{t("bodyOne")}</p>
+              <p className="text-base leading-relaxed text-dim">{t("bodyTwo")}</p>
+              <div className="pt-4">
+                <ArrowLink href="/history">{t("cta")}</ArrowLink>
+              </div>
+            </div>
           </div>
         </Reveal>
       </Container>

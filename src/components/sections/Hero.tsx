@@ -1,22 +1,37 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { LogoMark } from "@/components/ui/Logo";
 import { SITE } from "@/lib/constants";
+import studio from "@/assets/photos/beroshima-studio.webp";
 
 /**
- * Full-viewport opener. The whole thing is type and rules — no photography,
- * because the label has no shot of hero imagery yet and a stock DJ photo would
- * undercut the one asset that is genuinely strong: the mark.
- *
- * When Frank's logo arrives, the LogoMark block here is where it goes big.
+ * Full-viewport opener: the studio shot sunk almost all the way into the black,
+ * with the type sitting on top. The photo is there to give the black depth, not
+ * to be looked at — at 18% opacity behind a gradient it registers as texture
+ * first and a portrait second, which is why the headline stays readable.
  */
 export function Hero() {
   const t = useTranslations("home.hero");
 
   return (
     <section className="scanlines relative flex min-h-[calc(100svh-4rem)] flex-col justify-between overflow-hidden border-b border-rule pb-10 pt-16">
+      {/* Photo layer, then a gradient that keeps the left column solid black. */}
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <Image
+          src={studio}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[70%_center] opacity-30 grayscale contrast-125"
+        />
+        <div className="absolute inset-0 bg-linear-to-r from-ink via-ink/90 to-ink/25" />
+        <div className="absolute inset-0 bg-linear-to-t from-ink via-transparent to-ink/60" />
+      </div>
+
       {/* Faint grid rules, letting the black breathe without adding colour. */}
       <div aria-hidden className="grid-rules pointer-events-none absolute inset-0 opacity-40" />
 
@@ -54,7 +69,8 @@ export function Hero() {
               <ArrowUpRight className="h-4 w-4" />
             </Link>
           </div>
-          <LogoMark className="hidden h-32 w-32 text-rule lg:block" />
+          {/* The mark, nearly submerged — a watermark, not a second logo. */}
+          <LogoMark className="hidden h-36 text-paper/15 lg:block" />
         </div>
       </Container>
     </section>

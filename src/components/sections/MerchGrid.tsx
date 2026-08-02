@@ -24,7 +24,7 @@ export function MerchGrid() {
           <li key={item.id} className="group border-b border-rule sm:border-r">
             <div className="scanlines relative flex aspect-square items-center justify-center overflow-hidden bg-smoke">
               <div aria-hidden className="grid-rules pointer-events-none absolute inset-0 opacity-30" />
-              <LogoMark className="relative h-24 w-24 text-rule transition-colors duration-500 group-hover:text-blood" />
+              <LogoMark className="relative h-28 text-rule transition-colors duration-500 group-hover:text-blood" />
             </div>
 
             <div className="flex items-start justify-between gap-4 p-6">

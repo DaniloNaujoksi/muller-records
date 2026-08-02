@@ -54,7 +54,9 @@
       "quote": "Angefangen in einem Berlin, das noch nicht entschieden hatte, was es werden will.",
       "bodyOne": "Frank Müller zieht 1992 nach Berlin — gelernter Maschinenbauer, seit Mitte der Achtziger als DJ unterwegs. 1993 folgt Acid Orange, zwanzig Platten tief, darunter die Debütsingle von Toktok. 1996 öffnet Müller Records.",
       "bodyTwo": "Danach dreißig Jahre Platten, die sich nie auf eine Spur festlegen ließen: Detroit-Techno, Acid, New-Wave-Melodik — und eine dauerhaft offene Leitung nach Tokio, wo Beroshima vor Räumen spielt, die die meisten europäischen Produzenten nie sehen.",
-      "cta": "Die ganze Geschichte"
+      "cta": "Die ganze Geschichte",
+      "portraitAlt": "Frank Müller als Beroshima, mit Sonnenbrille und roter Jacke, von hinten angeleuchtet",
+      "portraitCaption": "Frank Müller · Beroshima"
     },
     "merch": {
       "label": "Merch",
@@ -94,6 +96,12 @@
     "label": "Geschichte",
     "title": "Geschichte & Wirkung",
     "lede": "Dreißig Jahre Berliner Label, erzählt über die Platten, die verändert haben, was es war.",
+    "photos": {
+      "tapeAlt": "Frank Müller an einer Bandmaschine, in Anzug und Krawatte",
+      "tapeCaption": "Band, immer noch",
+      "wallAlt": "Frank Müller schirmt die Augen ab, vor einer Wand aus Platten",
+      "wallCaption": "Vor dem Katalog"
+    },
     "entries": {
       "dj": {
         "title": "Erste Platten, erste Räume",

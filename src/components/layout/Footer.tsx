@@ -29,7 +29,7 @@ export function Footer() {
       <Container wide className="py-16">
         <div className="grid gap-12 md:grid-cols-[2fr_1fr_1fr]">
           <div>
-            <LogoMark className="h-16 w-16 text-paper" />
+            <LogoMark className="h-20 text-paper" />
             <p className="type-heading mt-6 max-w-sm text-3xl">{t("sign")}</p>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-mute">{t("blurb")}</p>
           </div>

@@ -7,6 +7,11 @@ export const routing = defineRouting({
   locales: ["en", "de"],
   defaultLocale: "en",
   localePrefix: "as-needed",
+  // No sniffing the Accept-Language header. Everyone lands on English and
+  // switches deliberately — a German browser being redirected to /de made the
+  // default locale a lie and meant the label's own site opened differently
+  // depending on who was looking at it.
+  localeDetection: false,
   pathnames: {
     "/": { en: "/", de: "/start" },
     "/catalog": { en: "/catalog", de: "/katalog" },
