@@ -175,35 +175,21 @@
   "merch": {
     "label": "Merch",
     "title": "Merch",
-    "lede": "Built around the logo. Shirts, hoodies, bags, slipmats — all of it going live in stages, all of it sold through the label's shop rather than a third-party print farm.",
+    "lede": "Shirts and records, straight from the label's own Bandcamp store. Every buy button goes there — no second checkout, no third-party print farm.",
     "buy": "Buy",
-    "soon": "Coming soon",
-    "tbd": "TBD",
-    "items": {
-      "logoTee": {
-        "name": "Logo Tee",
-        "blurb": "Heavyweight black cotton, mark on the chest, catalogue numbers down the back."
-      },
-      "logoHoodie": {
-        "name": "Logo Hoodie",
-        "blurb": "The one that gets worn to the airport at 6am. Black on black, red mark."
-      },
-      "toteBag": {
-        "name": "Record Tote",
-        "blurb": "Sized for twelve-inches, not for groceries. Canvas, reinforced base."
-      },
-      "slipmats": {
-        "name": "Slipmats (Pair)",
-        "blurb": "Felt, seven inch centre, mark printed in red. Made to be used, not framed."
-      },
-      "vinylBundle": {
-        "name": "Vinyl Bundle",
-        "blurb": "A hand-picked run of records from the catalogue, priced under the sum of its parts."
-      },
-      "cap": {
-        "name": "Cap",
-        "blurb": "Unstructured, embroidered mark, no oversized branding."
-      }
+    "soldOut": "Sold out",
+    "count": "{count} listed",
+    "apparel": {
+      "title": "Shirts",
+      "body": "Silver print on black, from the Polyphonication run. Sizes are listed as they were pressed — when a size is gone, it is gone."
+    },
+    "vinyl": {
+      "title": "Records in stock",
+      "body": "Vinyl and CDs still available, including test pressings and coloured runs. Prices and stock come from Bandcamp, so what you see here is what is actually left."
+    },
+    "gone": {
+      "title": "Out of print",
+      "body": "Pressed, sold, gone. Listed because a catalogue that sold out is part of the record too — try the second-hand market."
     },
     "records": {
       "title": "Records first",

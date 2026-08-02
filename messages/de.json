@@ -175,35 +175,21 @@
   "merch": {
     "label": "Merch",
     "title": "Merch",
-    "lede": "Um das Logo herum gebaut. Shirts, Hoodies, Taschen, Slipmats — schrittweise verfügbar, verkauft über den Shop des Labels statt über eine Print-on-Demand-Farm.",
+    "lede": "Shirts und Platten, direkt aus dem Bandcamp-Store des Labels. Jeder Kauf-Button führt dorthin — kein zweiter Checkout, keine Print-on-Demand-Farm.",
     "buy": "Kaufen",
-    "soon": "Demnächst",
-    "tbd": "Offen",
-    "items": {
-      "logoTee": {
-        "name": "Logo Tee",
-        "blurb": "Schwere schwarze Baumwolle, Zeichen auf der Brust, Katalognummern über den Rücken."
-      },
-      "logoHoodie": {
-        "name": "Logo Hoodie",
-        "blurb": "Der, der um sechs Uhr morgens mit zum Flughafen geht. Schwarz auf Schwarz, rotes Zeichen."
-      },
-      "toteBag": {
-        "name": "Record Tote",
-        "blurb": "Auf Zwölf-Zoll geschnitten, nicht auf Wocheneinkauf. Canvas, verstärkter Boden."
-      },
-      "slipmats": {
-        "name": "Slipmats (Paar)",
-        "blurb": "Filz, Sieben-Zoll-Mitte, Zeichen in Rot. Zum Benutzen gemacht, nicht zum Rahmen."
-      },
-      "vinylBundle": {
-        "name": "Vinyl-Bundle",
-        "blurb": "Eine handverlesene Reihe Platten aus dem Katalog, günstiger als die Summe der Teile."
-      },
-      "cap": {
-        "name": "Cap",
-        "blurb": "Unstrukturiert, gesticktes Zeichen, kein übergroßes Branding."
-      }
+    "soldOut": "Ausverkauft",
+    "count": "{count} gelistet",
+    "apparel": {
+      "title": "Shirts",
+      "body": "Silberdruck auf Schwarz, aus der Polyphonication-Auflage. Größen stehen so, wie sie gedruckt wurden — was weg ist, ist weg."
+    },
+    "vinyl": {
+      "title": "Platten auf Lager",
+      "body": "Vinyl und CDs, die es noch gibt, inklusive Testpressungen und farbiger Auflagen. Preise und Bestand kommen von Bandcamp — was hier steht, ist auch wirklich noch da."
+    },
+    "gone": {
+      "title": "Vergriffen",
+      "body": "Gepresst, verkauft, weg. Steht hier, weil ein ausverkaufter Katalog Teil der Geschichte ist — bleibt der Gebrauchtmarkt."
     },
     "records": {
       "title": "Platten zuerst",

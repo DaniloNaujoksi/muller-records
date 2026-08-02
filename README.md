@@ -37,7 +37,8 @@ Everything factual sits in `src/data/`:
 | `catalog.ts` | Releases, catalogue numbers, the four imprints, albums |
 | `artists.ts` | Roster, split into full releases and remix credits |
 | `timeline.ts` | Label history years, plus the stat-band numbers |
-| `merch.ts` | Merch items, prices, external shop links |
+| `merch.ts` | Merch items, prices, stock, Bandcamp links (scraped, see below) |
+| `merch-images.ts` | Static imports of the Bandcamp artwork, keyed by art id |
 
 Prose for the timeline and merch lives in `messages/*.json` under matching keys,
 so both languages stay in step.
@@ -72,11 +73,15 @@ catalogue opener. More than that and the one flourish becomes wallpaper.
   laut.de and RA. Discogs blocks automated reads, so the pre-2000 records are
   thin and most years are unverified (`verified: false` renders as `—` rather
   than a guess). Frank's master list overrides all of it.
-- **Merch.** Showcase only, by design: `buyUrl` hands off to an external shop and
-  items without one render as "coming soon". No cart, no payment, no VAT logic in
-  this codebase until the label actually wants a shop here.
-- **Photography.** Product shots are still missing; merch tiles fall back to the
-  mark on black. The four press photos are low resolution (400–1024px wide),
-  which is fine at current sizes but will not survive a full-bleed treatment.
+- **Merch is a mirror, not a shop.** Items, prices, stock and artwork are pulled
+  from the label's Bandcamp stores (`mullerrecords`, `beroshima`) and every buy
+  button leaves for Bandcamp, which already handles VAT, shipping and returns.
+  Nothing here holds an order or a card number. The scrape lives outside the
+  repo, so **prices and stock go stale**: when they move, re-run the scrape
+  rather than hand-editing `merch.ts` — a wrong price on a label site is worse
+  than no price. Artwork is downloaded to `src/assets/merch/` rather than
+  hotlinked, because the Bandcamp CDN is not ours to depend on.
+- **Photography.** The four press photos are low resolution (400–1024px wide),
+  fine at current sizes but not enough for a full-bleed treatment.
 - **Legal.** Impressum and Datenschutz pages are required before this goes live
   in Germany. Not written yet — they need real address and contact data.
