@@ -33,13 +33,13 @@ export function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[25%_center] opacity-15 grayscale contrast-125"
+          className="object-cover object-[25%_center] opacity-10 grayscale contrast-125"
         />
         <div className="absolute inset-0 bg-linear-to-r from-ink via-ink/90 to-ink/70" />
         <div className="absolute inset-0 bg-linear-to-t from-ink via-transparent to-ink/60" />
       </div>
 
-      <VinylBackdrop className="top-[45%]" opacityClassName="opacity-34" />
+      <VinylBackdrop className="top-[45%]" opacityClassName="opacity-22" />
 
       {/* Faint grid rules, letting the black breathe without adding colour. */}
       <div aria-hidden className="grid-rules pointer-events-none absolute inset-0 opacity-40" />
