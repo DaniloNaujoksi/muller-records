@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "titleSuffix": "Berliner Techno seit 1996",
+    "description": "Müller Records — das Berliner Techno-Label von Frank Müller seit 1996. Katalog, Roster, Geschichte und Merchandise."
+  },
+  "nav": {
+    "primary": "Hauptnavigation",
+    "catalog": "Katalog",
+    "artists": "Artists",
+    "history": "Geschichte",
+    "merch": "Merch",
+    "contact": "Kontakt",
+    "open": "Menü öffnen",
+    "close": "Menü schließen"
+  },
+  "home": {
+    "hero": {
+      "since": "Seit {year}",
+      "lede": "Berliner Techno-Label von Frank Müller — Beroshima. Detroit-geprägt, groove-getrieben, Acid in der Verkabelung. Vier Imprints, drei Jahrzehnte und ein Roster, das sich liest wie eine Landkarte dieser Musik.",
+      "ctaCatalog": "Der Katalog",
+      "ctaArtists": "Das Roster"
+    },
+    "stats": {
+      "years": "Jahre aktiv",
+      "releases": "Releases",
+      "artists": "Artists",
+      "imprints": "Imprints"
+    },
+    "artists": {
+      "label": "Roster",
+      "title": "Wer hier veröffentlicht hat",
+      "body": "Detroit, Tokio, Grenoble, New York, Berlin. Das Label hatte nie einen House-Sound, sondern einen Maßstab — Platten, die um drei Uhr nachts funktionieren und am Nachmittag danach über Kopfhörer immer noch stehen.",
+      "cta": "Alle Artists",
+      "remix": "Remix"
+    },
+    "imprints": {
+      "label": "Die Imprints"
+    },
+    "catalog": {
+      "label": "Katalog",
+      "title": "Gepresst, nummeriert, immer noch am Laufen",
+      "cta": "Ganzer Katalog",
+      "columns": {
+        "catalog": "Kat.-Nr.",
+        "title": "Titel",
+        "artist": "Artist",
+        "credits": "Remix / feat.",
+        "year": "Jahr",
+        "imprint": "Imprint"
+      }
+    },
+    "story": {
+      "label": "Geschichte",
+      "quote": "Angefangen in einem Berlin, das noch nicht entschieden hatte, was es werden will.",
+      "bodyOne": "Frank Müller zieht 1992 nach Berlin — gelernter Maschinenbauer, seit Mitte der Achtziger als DJ unterwegs. 1993 folgt Acid Orange, zwanzig Platten tief, darunter die Debütsingle von Toktok. 1996 öffnet Müller Records.",
+      "bodyTwo": "Danach dreißig Jahre Platten, die sich nie auf eine Spur festlegen ließen: Detroit-Techno, Acid, New-Wave-Melodik — und eine dauerhaft offene Leitung nach Tokio, wo Beroshima vor Räumen spielt, die die meisten europäischen Produzenten nie sehen.",
+      "cta": "Die ganze Geschichte"
+    },
+    "merch": {
+      "label": "Merch",
+      "title": "Das Zeichen auf Baumwolle",
+      "body": "Das Logo hat die meisten Clubs überlebt, in denen es lief. Shirts, Hoodies, Slipmats und Platten-Bundles — um das Zeichen herum gebaut, nicht darübergedruckt.",
+      "cta": "Zum Merch",
+      "bandcamp": "Platten auf Bandcamp kaufen"
+    }
+  },
+  "artists": {
+    "label": "Roster",
+    "title": "Artists",
+    "lede": "{count} Namen haben eine Platte oder einen Remix auf einem Müller-Imprint veröffentlicht. Einige davon definieren ganze Städte dieser Musik.",
+    "releasedHere": "Auf dem Label veröffentlicht",
+    "remixedHere": "Für das Label remixt",
+    "remixNote": "Remix-Credits, bewusst getrennt von vollen Releases — ein Remix ist eine andere Art von Verhältnis zu einem Label, und beides verdient eine saubere Benennung.",
+    "remix": "Remix"
+  },
+  "catalog": {
+    "label": "Katalog",
+    "title": "Katalog",
+    "lede": "Alle bisher dokumentierten Releases, nach Imprint gruppiert, neueste zuerst.",
+    "disclaimer": "Diese Liste ist aus öffentlichen Quellen zusammengetragen und noch nicht vollständig — besonders die Platten vor 2000 werden noch erfasst. Die maßgebliche Diskografie steht auf",
+    "since": "seit {year}",
+    "count": "{count} dokumentiert",
+    "albums": "Alben",
+    "columns": {
+      "catalog": "Kat.-Nr.",
+      "title": "Titel",
+      "artist": "Artist",
+      "credits": "Remix / feat.",
+      "year": "Jahr",
+      "imprint": "Imprint"
+    }
+  },
+  "history": {
+    "label": "Geschichte",
+    "title": "Geschichte & Wirkung",
+    "lede": "Dreißig Jahre Berliner Label, erzählt über die Platten, die verändert haben, was es war.",
+    "entries": {
+      "dj": {
+        "title": "Erste Platten, erste Räume",
+        "body": "Frank Müller legt ab Mitte der Achtziger auf, Jahre bevor Techno in Deutschland einen Namen hat. Die Ausbildung ist Maschinenbau, die Schule sind New Wave und frühe Elektronik."
+      },
+      "berlin": {
+        "title": "Berlin",
+        "body": "Nach mehreren Jahren in den Niederlanden zieht Müller 1992 nach Berlin — in eine Stadt, in der die Techno-Szene gerade in Echtzeit aus den Gebäuden gebaut wird, die sonst keiner wollte."
+      },
+      "acidOrange": {
+        "title": "Acid Orange",
+        "body": "Das erste Label. Zwanzig Releases über die Laufzeit, und ein Katalog, der die Acid-Ader etabliert, die bis heute in allem hörbar ist, was Müller herausbringt."
+      },
+      "toktok": {
+        "title": "Toktoks Debüt",
+        "body": "Acid Orange veröffentlicht die erste Toktok-Single — einer von mehreren Fällen, in denen das Label der Ort ist, an dem ein Act anfängt, nicht der, an dem er ankommt."
+      },
+      "muller": {
+        "title": "Müller Records",
+        "body": "Die Hauptlinie öffnet in Berlin. In den Jahren darauf erscheinen Claude Young, John Selway, The Hacker, Air Liquide, Rok, Autotune und Latex — und das Label wird ein fester Teil der Stadt statt eines Imprints auf Zeit."
+      },
+      "matadors": {
+        "title": "Matadors Of Techno",
+        "body": "Beroshima und Takkyu Ishino von Denki Groove nehmen gemeinsam auf — der deutlichste einzelne Marker der Berlin-Tokio-Linie, die sich durch die gesamte Labelgeschichte zieht."
+      },
+      "beroshimaMusic": {
+        "title": "Beroshima Music, und POP",
+        "body": "Müller eröffnet ein Imprint für die eigenen Arbeiten und veröffentlicht das Debütalbum POP · Pornography Of Performance. Beroshima hört auf, ein Projektname zu sein, und wird ein Werk."
+      },
+      "ballet": {
+        "title": "The Catastrophe Ballet",
+        "body": "Das zweite Album. New-Wave-Melodik auf Techno-Struktur — die Kombination, an der der Katalog über Jahrzehnte hinweg erkennbar bleibt."
+      },
+      "cocoon": {
+        "title": "Horizon auf Cocoon",
+        "body": "Sven Väths Cocoon Recordings veröffentlicht Horizon. Das Remix-Paket versammelt Tigerskin, Ulrich Schnauss, Funk D'Void und Pig & Dan, und der Track reist weit über die eigene Reichweite des Labels hinaus."
+      },
+      "polyphonication": {
+        "title": "Polyphonication",
+        "body": "Ein Studioalbum tief in der zweiten Dekade des Labels — zu einem Zeitpunkt, an dem die meisten Imprints von 1996 längst aufgehört haben."
+      },
+      "madMusician": {
+        "title": "Mad Musician",
+        "body": "Eine neue Serie, wieder ab eins nummeriert, mit Ken Ishii, Kirk Degiorgio und Donna Summer in den Credits. Das Archiv öffnet sich, und das Label presst weiter."
+      }
+    },
+    "impact": {
+      "title": "Warum das zählt",
+      "berlin": {
+        "title": "Teil des Berliner Inventars",
+        "body": "1996 gegründet, nie verkauft, nie eingestellt, nie umbenannt. Berlin hat in dieser Zeit mehrere komplette Labelgenerationen durchlaufen. Müller Records ist eine der Konstanten."
+      },
+      "japan": {
+        "title": "Die Tokio-Linie",
+        "body": "Frank Müller alias Beroshima hat in Japan einen Stand, den wenige europäische Techno-Produzenten erreichen — mit Releases und Kollaborationen über Ken Ishii und Takkyu Ishino. Japanische Artists stehen im Katalog als Selbstverständlichkeit, nicht als exotischer Abstecher."
+      },
+      "detroit": {
+        "title": "Detroit, richtig",
+        "body": "Claude Young, John Selway und Kirk Degiorgio im Katalog sind keine Dekoration. Das Label hat sich seine Detroit-Verbindungen erarbeitet, indem es diese Platten damals veröffentlicht hat — nicht, indem es sie hinterher zitiert."
+      },
+      "longevity": {
+        "title": "Ein Katalog, kein Moment",
+        "body": "Über hundert dokumentierte Releases auf vier Imprints, von der 12\"-Vinyl bis digital, über den gesamten Bogen von der Rave-Ökonomie der Neunziger bis zum Streaming. Sehr wenige unabhängige Techno-Labels haben einen so langen Lauf."
+      }
+    },
+    "sources": {
+      "title": "Quellen",
+      "body": "Die Geschichte oben ist aus öffentlicher Dokumentation zusammengetragen. Korrekturen vom Label haben Vorrang vor allem davon."
+    }
+  },
+  "merch": {
+    "label": "Merch",
+    "title": "Merch",
+    "lede": "Um das Logo herum gebaut. Shirts, Hoodies, Taschen, Slipmats — schrittweise verfügbar, verkauft über den Shop des Labels statt über eine Print-on-Demand-Farm.",
+    "buy": "Kaufen",
+    "soon": "Demnächst",
+    "tbd": "Offen",
+    "items": {
+      "logoTee": {
+        "name": "Logo Tee",
+        "blurb": "Schwere schwarze Baumwolle, Zeichen auf der Brust, Katalognummern über den Rücken."
+      },
+      "logoHoodie": {
+        "name": "Logo Hoodie",
+        "blurb": "Der, der um sechs Uhr morgens mit zum Flughafen geht. Schwarz auf Schwarz, rotes Zeichen."
+      },
+      "toteBag": {
+        "name": "Record Tote",
+        "blurb": "Auf Zwölf-Zoll geschnitten, nicht auf Wocheneinkauf. Canvas, verstärkter Boden."
+      },
+      "slipmats": {
+        "name": "Slipmats (Paar)",
+        "blurb": "Filz, Sieben-Zoll-Mitte, Zeichen in Rot. Zum Benutzen gemacht, nicht zum Rahmen."
+      },
+      "vinylBundle": {
+        "name": "Vinyl-Bundle",
+        "blurb": "Eine handverlesene Reihe Platten aus dem Katalog, günstiger als die Summe der Teile."
+      },
+      "cap": {
+        "name": "Cap",
+        "blurb": "Unstrukturiert, gesticktes Zeichen, kein übergroßes Branding."
+      }
+    },
+    "records": {
+      "title": "Platten zuerst",
+      "body": "Das Merch gibt es, weil es die Platten gibt. Alles aus dem Katalog, was noch verfügbar ist, steht auf Bandcamp — digital, und Vinyl solange Vorrat reicht.",
+      "cta": "Müller Records auf Bandcamp"
+    },
+    "wholesale": {
+      "title": "Läden & Großhandel",
+      "body": "Plattenläden und Vertriebe: für Konditionen zu Merch und Backkatalog direkt melden."
+    }
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Kontakt",
+    "lede": "Demos, Bookings, Presse. Eine Adresse, gelesen vom Label.",
+    "elsewhere": "Anderswo",
+    "channels": {
+      "demos": {
+        "title": "Demos",
+        "body": "Privaten Streaming-Link schicken statt Anhänge. Zwei oder drei Tracks reichen. Keine Antwort innerhalb eines Monats heißt: diesmal hat es nicht gepasst."
+      },
+      "bookings": {
+        "title": "Bookings",
+        "body": "Beroshima live und als DJ. Datum, Stadt, Kapazität und das restliche Line-up bitte mit angeben."
+      },
+      "press": {
+        "title": "Presse & Lizenzen",
+        "body": "Interviews, Pressematerial, Sync- und Lizenzanfragen zum Katalog."
+      }
+    }
+  },
+  "footer": {
+    "sign": "Berliner Techno seit 1996",
+    "blurb": "Müller Records ist das Berliner Label, das Frank Müller — Beroshima — 1996 gegründet hat, neben Acid Orange, Beroshima Music und der Mad-Musician-Serie.",
+    "siteLinks": "Seite",
+    "elsewhere": "Anderswo",
+    "tagline": "Schwarz · Weiß · Rot",
+    "nav": {
+      "catalog": "Katalog",
+      "artists": "Artists",
+      "history": "Geschichte",
+      "merch": "Merch",
+      "contact": "Kontakt"
+    }
+  }
+}

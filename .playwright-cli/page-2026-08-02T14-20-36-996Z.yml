@@ -1,0 +1,333 @@
+- generic [active] [ref=f2e1]:
+  - banner [ref=f2e2]:
+    - generic [ref=f2e3]:
+      - link "Müller Records Müller·Records" [ref=f2e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f2e5]:
+          - img "Müller Records" [ref=f2e6]
+          - generic [ref=f2e11]: Müller·Records
+      - navigation "Primary" [ref=f2e12]:
+        - link "Catalogue" [ref=f2e13] [cursor=pointer]:
+          - /url: /catalog
+        - link "Artists" [ref=f2e14] [cursor=pointer]:
+          - /url: /artists
+        - link "History" [ref=f2e15] [cursor=pointer]:
+          - /url: /history
+        - link "Merch" [ref=f2e16] [cursor=pointer]:
+          - /url: /merch
+        - link "Contact" [ref=f2e17] [cursor=pointer]:
+          - /url: /contact
+        - generic [ref=f2e18]:
+          - link "en" [ref=f2e20] [cursor=pointer]:
+            - /url: /en/catalog
+          - generic [ref=f2e21]:
+            - generic [ref=f2e22]: /
+            - link "de" [ref=f2e23] [cursor=pointer]:
+              - /url: /de/katalog
+  - main [ref=f2e24]:
+    - generic [ref=f2e26]:
+      - paragraph [ref=f2e27]:
+        - generic [ref=f2e28]: "02"
+        - generic [ref=f2e30]: Catalogue
+      - heading "Catalogue" [level=1] [ref=f2e31]
+      - paragraph [ref=f2e32]: Every release documented so far, grouped by imprint and running newest first.
+    - generic [ref=f2e34]:
+      - paragraph [ref=f2e35]:
+        - text: This listing is compiled from public sources and is not yet complete — the pre-2000 records in particular are still being entered. The definitive discography lives on
+        - link "Discogs" [ref=f2e36] [cursor=pointer]:
+          - /url: https://www.discogs.com/label/1941-M%C3%BCller-Records
+        - text: .
+      - generic [ref=f2e37]:
+        - generic [ref=f2e38]:
+          - heading "Mad Musician" [level=2] [ref=f2e39]
+          - generic [ref=f2e40]: since 2020 · 4 documented
+        - table [ref=f2e42]:
+          - caption [ref=f2e43]: Cat. no.
+          - rowgroup [ref=f2e44]:
+            - row [ref=f2e45]:
+              - columnheader "Cat. no." [ref=f2e46]
+              - columnheader "Title" [ref=f2e47]
+              - columnheader "Artist" [ref=f2e48]
+              - columnheader "Remix / feat." [ref=f2e49]
+              - columnheader "Year" [ref=f2e50]
+          - rowgroup [ref=f2e51]:
+            - row [ref=f2e52]:
+              - cell "Mad Musician 05 Mad Musician" [ref=f2e53]:
+                - text: Mad Musician 05
+                - generic [ref=f2e54]: Mad Musician
+              - cell "The Moment" [ref=f2e55]
+              - cell "Frank Müller (Beroshima)" [ref=f2e56]
+              - cell "Donna Summer" [ref=f2e57]
+              - cell "—" [ref=f2e58]
+            - row [ref=f2e59]:
+              - cell "Mad Musician 03 Mad Musician" [ref=f2e60]:
+                - text: Mad Musician 03
+                - generic [ref=f2e61]: Mad Musician
+              - cell "TGV" [ref=f2e62]
+              - cell "Frank Müller (Beroshima)" [ref=f2e63]
+              - cell "Ken Ishii" [ref=f2e64]
+              - cell "—" [ref=f2e65]
+            - row [ref=f2e66]:
+              - cell "Mad Musician 02 Mad Musician" [ref=f2e67]:
+                - text: Mad Musician 02
+                - generic [ref=f2e68]: Mad Musician
+              - cell "Horizon & Remixes" [ref=f2e69]
+              - cell "Frank Müller (Beroshima)" [ref=f2e70]
+              - cell "Tigerskin, Ulrich Schnauss, Funk D'Void" [ref=f2e71]
+              - cell "—" [ref=f2e72]
+            - row [ref=f2e73]:
+              - cell "Mad Musician 01 Mad Musician" [ref=f2e74]:
+                - text: Mad Musician 01
+                - generic [ref=f2e75]: Mad Musician
+              - cell "Emphasis EP" [ref=f2e76]
+              - cell "Frank Müller (Beroshima)" [ref=f2e77]
+              - cell "Kirk Degiorgio" [ref=f2e78]
+              - cell "2020" [ref=f2e79]
+      - generic [ref=f2e80]:
+        - generic [ref=f2e81]:
+          - heading "Müller Records" [level=2] [ref=f2e82]
+          - generic [ref=f2e83]: since 1996 · 21 documented
+        - table [ref=f2e85]:
+          - caption [ref=f2e86]: Cat. no.
+          - rowgroup [ref=f2e87]:
+            - row [ref=f2e88]:
+              - columnheader "Cat. no." [ref=f2e89]
+              - columnheader "Title" [ref=f2e90]
+              - columnheader "Artist" [ref=f2e91]
+              - columnheader "Remix / feat." [ref=f2e92]
+              - columnheader "Year" [ref=f2e93]
+          - rowgroup [ref=f2e94]:
+            - row [ref=f2e95]:
+              - cell "Muller 2102 Müller Records" [ref=f2e96]:
+                - text: Muller 2102
+                - generic [ref=f2e97]: Müller Records
+              - cell "DeeBeePhunky" [ref=f2e98]
+              - cell "Frank Müller (Beroshima)" [ref=f2e99]
+              - cell "—" [ref=f2e100]
+              - cell "—" [ref=f2e101]
+            - row [ref=f2e102]:
+              - cell "Muller 2101 Müller Records" [ref=f2e103]:
+                - text: Muller 2101
+                - generic [ref=f2e104]: Müller Records
+              - cell "Endlos" [ref=f2e105]
+              - cell "Westbam" [ref=f2e106]
+              - cell "—" [ref=f2e107]
+              - cell "—" [ref=f2e108]
+            - row [ref=f2e109]:
+              - cell "Muller 2100 Müller Records" [ref=f2e110]:
+                - text: Muller 2100
+                - generic [ref=f2e111]: Müller Records
+              - cell "This Could Be …" [ref=f2e112]
+              - cell "Frank Müller (Beroshima)" [ref=f2e113]
+              - cell "—" [ref=f2e114]
+              - cell "—" [ref=f2e115]
+            - row [ref=f2e116]:
+              - cell "Muller 2099 Müller Records" [ref=f2e117]:
+                - text: Muller 2099
+                - generic [ref=f2e118]: Müller Records
+              - cell "essentiel" [ref=f2e119]
+              - cell "Steril" [ref=f2e120]
+              - cell "Latex" [ref=f2e121]
+              - cell "—" [ref=f2e122]
+            - row [ref=f2e123]:
+              - cell "Muller 2098 Müller Records" [ref=f2e124]:
+                - text: Muller 2098
+                - generic [ref=f2e125]: Müller Records
+              - cell "Tragedy EP" [ref=f2e126]
+              - cell "Beroshima / Frank Müller" [ref=f2e127]
+              - cell "—" [ref=f2e128]
+              - cell "—" [ref=f2e129]
+            - row [ref=f2e130]:
+              - cell "Muller 2097 Müller Records" [ref=f2e131]:
+                - text: Muller 2097
+                - generic [ref=f2e132]: Müller Records
+              - cell "Tou Hoku Shin EP" [ref=f2e133]
+              - cell "R-04" [ref=f2e134]
+              - cell "Kei How, Explain" [ref=f2e135]
+              - cell "—" [ref=f2e136]
+            - row [ref=f2e137]:
+              - cell "Muller 2096 Müller Records" [ref=f2e138]:
+                - text: Muller 2096
+                - generic [ref=f2e139]: Müller Records
+              - cell "Lovetrain EP" [ref=f2e140]
+              - cell "Beroshima" [ref=f2e141]
+              - cell "Takkyu Ishino" [ref=f2e142]
+              - cell "—" [ref=f2e143]
+            - row [ref=f2e144]:
+              - cell "Muller 2095 Müller Records" [ref=f2e145]:
+                - text: Muller 2095
+                - generic [ref=f2e146]: Müller Records
+              - cell "Telecommande" [ref=f2e147]
+              - cell "Indy Toureau" [ref=f2e148]
+              - cell "—" [ref=f2e149]
+              - cell "—" [ref=f2e150]
+            - row [ref=f2e151]:
+              - cell "Muller 2094 Müller Records" [ref=f2e152]:
+                - text: Muller 2094
+                - generic [ref=f2e153]: Müller Records
+              - cell "The Lost Frea(k)quencies Vol. 3" [ref=f2e154]
+              - cell "Frank Müller (Beroshima)" [ref=f2e155]
+              - cell "—" [ref=f2e156]
+              - cell "—" [ref=f2e157]
+            - row [ref=f2e158]:
+              - cell "Muller 2093 Müller Records" [ref=f2e159]:
+                - text: Muller 2093
+                - generic [ref=f2e160]: Müller Records
+              - cell "Horizon & Remixes" [ref=f2e161]
+              - cell "Frank Müller (Beroshima)" [ref=f2e162]
+              - cell "Tigerskin, Ulrich Schnauss, Funk D'Void, Pig & Dan" [ref=f2e163]
+              - cell "—" [ref=f2e164]
+            - row [ref=f2e165]:
+              - cell "Muller 2092 Müller Records" [ref=f2e166]:
+                - text: Muller 2092
+                - generic [ref=f2e167]: Müller Records
+              - cell "Mad Musician" [ref=f2e168]
+              - cell "Beroshima / Frank Müller" [ref=f2e169]
+              - cell "Ken Ishii, Kirk Degiorgio, Donna Summer" [ref=f2e170]
+              - cell "—" [ref=f2e171]
+            - row [ref=f2e172]:
+              - cell "Muller 2091 Müller Records" [ref=f2e173]:
+                - text: Muller 2091
+                - generic [ref=f2e174]: Müller Records
+              - cell "Real 2 Reel" [ref=f2e175]
+              - cell "Frank Müller (Beroshima)" [ref=f2e176]
+              - cell "Ulrich Schnauss" [ref=f2e177]
+              - cell "—" [ref=f2e178]
+            - row [ref=f2e179]:
+              - cell "Muller 2090 Müller Records" [ref=f2e180]:
+                - text: Muller 2090
+                - generic [ref=f2e181]: Müller Records
+              - cell "Good Morning Berlin" [ref=f2e182]
+              - cell "Frank Müller (Beroshima)" [ref=f2e183]
+              - cell "—" [ref=f2e184]
+              - cell "—" [ref=f2e185]
+            - row [ref=f2e186]:
+              - cell "Muller 2089 Müller Records" [ref=f2e187]:
+                - text: Muller 2089
+                - generic [ref=f2e188]: Müller Records
+              - cell "Hexaline EP" [ref=f2e189]
+              - cell "Frank Müller (Beroshima)" [ref=f2e190]
+              - cell "Ulrich Schnauss" [ref=f2e191]
+              - cell "—" [ref=f2e192]
+            - row [ref=f2e193]:
+              - cell "Muller 2088 Müller Records" [ref=f2e194]:
+                - text: Muller 2088
+                - generic [ref=f2e195]: Müller Records
+              - cell "Encounter EP" [ref=f2e196]
+              - cell "Frank Müller (Beroshima)" [ref=f2e197]
+              - cell "—" [ref=f2e198]
+              - cell "—" [ref=f2e199]
+            - row [ref=f2e200]:
+              - cell "Muller 2087 Müller Records" [ref=f2e201]:
+                - text: Muller 2087
+                - generic [ref=f2e202]: Müller Records
+              - cell "Electronic Discussion & Remixes" [ref=f2e203]
+              - cell "Beroshima" [ref=f2e204]
+              - cell "Claude Young, The Hacker" [ref=f2e205]
+              - cell "—" [ref=f2e206]
+            - row [ref=f2e207]:
+              - cell "Muller 2083 Müller Records" [ref=f2e208]:
+                - text: Muller 2083
+                - generic [ref=f2e209]: Müller Records
+              - cell "Moonraker EP" [ref=f2e210]
+              - cell "Frank Müller (Beroshima)" [ref=f2e211]
+              - cell "—" [ref=f2e212]
+              - cell "—" [ref=f2e213]
+            - row [ref=f2e214]:
+              - cell "Muller 2082 Müller Records" [ref=f2e215]:
+                - text: Muller 2082
+                - generic [ref=f2e216]: Müller Records
+              - cell "Prophets & Whores" [ref=f2e217]
+              - cell "Frank Müller (Beroshima)" [ref=f2e218]
+              - cell "—" [ref=f2e219]
+              - cell "—" [ref=f2e220]
+            - row [ref=f2e221]:
+              - cell "Muller 2081 Müller Records" [ref=f2e222]:
+                - text: Muller 2081
+                - generic [ref=f2e223]: Müller Records
+              - cell "Crucial! EP" [ref=f2e224]
+              - cell "Frank Müller (Beroshima)" [ref=f2e225]
+              - cell "—" [ref=f2e226]
+              - cell "—" [ref=f2e227]
+            - row [ref=f2e228]:
+              - cell "Muller 2080 Müller Records" [ref=f2e229]:
+                - text: Muller 2080
+                - generic [ref=f2e230]: Müller Records
+              - cell "Dance the Machine" [ref=f2e231]
+              - cell "Frank Müller (Beroshima)" [ref=f2e232]
+              - cell "—" [ref=f2e233]
+              - cell "—" [ref=f2e234]
+            - row [ref=f2e235]:
+              - cell "Muller 2079 Müller Records" [ref=f2e236]:
+                - text: Muller 2079
+                - generic [ref=f2e237]: Müller Records
+              - cell "Fuck Your Body" [ref=f2e238]
+              - cell "Frank Müller (Beroshima)" [ref=f2e239]
+              - cell "—" [ref=f2e240]
+              - cell "—" [ref=f2e241]
+    - generic [ref=f2e243]:
+      - heading "Albums" [level=2] [ref=f2e244]
+      - list [ref=f2e245]:
+        - listitem [ref=f2e246]:
+          - paragraph [ref=f2e247]: "2000"
+          - heading "POP · Pornography Of Performance" [level=3] [ref=f2e248]
+          - paragraph [ref=f2e249]: Beroshima
+        - listitem [ref=f2e250]:
+          - paragraph [ref=f2e251]: "2004"
+          - heading "The Catastrophe Ballet" [level=3] [ref=f2e252]
+          - paragraph [ref=f2e253]: Beroshima
+        - listitem [ref=f2e254]:
+          - paragraph [ref=f2e255]: "2011"
+          - heading "Polyphonication" [level=3] [ref=f2e256]
+          - paragraph [ref=f2e257]: Beroshima
+        - listitem [ref=f2e258]:
+          - paragraph [ref=f2e259]: "2020"
+          - heading "Mad Musician Series 1" [level=3] [ref=f2e260]
+          - paragraph [ref=f2e261]: Frank Müller (Beroshima)
+  - contentinfo [ref=f2e262]:
+    - generic [ref=f2e263]:
+      - generic [ref=f2e264]:
+        - generic [ref=f2e265]:
+          - img "Müller Records" [ref=f2e266]
+          - paragraph [ref=f2e271]: Berlin techno since 1996
+          - paragraph [ref=f2e272]: Müller Records is the Berlin label founded by Frank Müller — Beroshima — in 1996, alongside Acid Orange, Beroshima Music and the Mad Musician series.
+        - navigation "Site" [ref=f2e273]:
+          - paragraph [ref=f2e274]: Site
+          - list [ref=f2e275]:
+            - listitem [ref=f2e276]:
+              - link "Catalogue" [ref=f2e277] [cursor=pointer]:
+                - /url: /catalog
+            - listitem [ref=f2e278]:
+              - link "Artists" [ref=f2e279] [cursor=pointer]:
+                - /url: /artists
+            - listitem [ref=f2e280]:
+              - link "History" [ref=f2e281] [cursor=pointer]:
+                - /url: /history
+            - listitem [ref=f2e282]:
+              - link "Merch" [ref=f2e283] [cursor=pointer]:
+                - /url: /merch
+            - listitem [ref=f2e284]:
+              - link "Contact" [ref=f2e285] [cursor=pointer]:
+                - /url: /contact
+        - navigation "Elsewhere" [ref=f2e286]:
+          - paragraph [ref=f2e287]: Elsewhere
+          - list [ref=f2e288]:
+            - listitem [ref=f2e289]:
+              - link "Bandcamp" [ref=f2e290] [cursor=pointer]:
+                - /url: https://mullerrecords.bandcamp.com
+            - listitem [ref=f2e291]:
+              - link "Resident Advisor" [ref=f2e292] [cursor=pointer]:
+                - /url: https://ra.co/dj/beroshima
+            - listitem [ref=f2e293]:
+              - link "Discogs" [ref=f2e294] [cursor=pointer]:
+                - /url: https://www.discogs.com/label/1941-M%C3%BCller-Records
+            - listitem [ref=f2e295]:
+              - link "X" [ref=f2e296] [cursor=pointer]:
+                - /url: https://x.com/beroshima
+            - listitem [ref=f2e297]:
+              - link "Facebook" [ref=f2e298] [cursor=pointer]:
+                - /url: https://www.facebook.com/beroshima
+      - generic [ref=f2e299]:
+        - paragraph [ref=f2e300]: © 1996–2026 Müller Records, Berlin
+        - paragraph [ref=f2e301]: Black · White · Red
+  - button "Open Next.js Dev Tools" [ref=f2e307] [cursor=pointer]

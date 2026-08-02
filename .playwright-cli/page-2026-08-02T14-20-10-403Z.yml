@@ -1,0 +1,434 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - link "Müller Records Müller·Records" [ref=f1e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f1e5]:
+          - img "Müller Records" [ref=f1e6]
+          - generic [ref=f1e11]: Müller·Records
+      - navigation "Primary" [ref=f1e12]:
+        - link "Catalogue" [ref=f1e13] [cursor=pointer]:
+          - /url: /catalog
+        - link "Artists" [ref=f1e14] [cursor=pointer]:
+          - /url: /artists
+        - link "History" [ref=f1e15] [cursor=pointer]:
+          - /url: /history
+        - link "Merch" [ref=f1e16] [cursor=pointer]:
+          - /url: /merch
+        - link "Contact" [ref=f1e17] [cursor=pointer]:
+          - /url: /contact
+        - generic [ref=f1e18]:
+          - link "en" [ref=f1e20] [cursor=pointer]:
+            - /url: /en
+          - generic [ref=f1e21]:
+            - generic [ref=f1e22]: /
+            - link "de" [ref=f1e23] [cursor=pointer]:
+              - /url: /de/start
+  - main [ref=f1e24]:
+    - generic [ref=f1e25]:
+      - paragraph [ref=f1e27]: Berlin · Since 1996
+      - generic [ref=f1e28]:
+        - heading "Müller Records" [level=1] [ref=f1e29]:
+          - generic [ref=f1e30]: Müller
+          - generic [ref=f1e31]: Records
+        - paragraph [ref=f1e32]: A Berlin techno label run by Frank Müller — Beroshima. Detroit-inspired, groove-driven, acid in the wiring. Four imprints, three decades, and a roster that reads like a map of the music.
+      - generic [ref=f1e34]:
+        - generic [ref=f1e35]:
+          - link "The catalogue" [ref=f1e36] [cursor=pointer]:
+            - /url: /catalog
+          - link "The roster" [ref=f1e40] [cursor=pointer]:
+            - /url: /artists
+        - img "Müller Records" [ref=f1e44]
+    - generic [ref=f1e50]:
+      - generic [ref=f1e51]:
+        - paragraph [ref=f1e52]: "30"
+        - paragraph [ref=f1e53]: Years running
+      - generic [ref=f1e54]:
+        - paragraph [ref=f1e55]: 100+
+        - paragraph [ref=f1e56]: Releases
+      - generic [ref=f1e57]:
+        - paragraph [ref=f1e58]: 20+
+        - paragraph [ref=f1e59]: Artists
+      - generic [ref=f1e60]:
+        - paragraph [ref=f1e61]: "4"
+        - paragraph [ref=f1e62]: Imprints
+    - generic [ref=f1e64]:
+      - list [ref=f1e65]:
+        - listitem [ref=f1e66]:
+          - generic [ref=f1e67]: Claude Young
+          - generic [ref=f1e68]: ●
+        - listitem [ref=f1e69]:
+          - generic [ref=f1e70]: The Hacker
+          - generic [ref=f1e71]: ●
+        - listitem [ref=f1e72]:
+          - generic [ref=f1e73]: John Selway
+          - generic [ref=f1e74]: ●
+        - listitem [ref=f1e75]:
+          - generic [ref=f1e76]: Ken Ishii
+          - generic [ref=f1e77]: ●
+        - listitem [ref=f1e78]:
+          - generic [ref=f1e79]: Takkyu Ishino
+          - generic [ref=f1e80]: ●
+        - listitem [ref=f1e81]:
+          - generic [ref=f1e82]: Westbam
+          - generic [ref=f1e83]: ●
+        - listitem [ref=f1e84]:
+          - generic [ref=f1e85]: Air Liquide
+          - generic [ref=f1e86]: ●
+        - listitem [ref=f1e87]:
+          - generic [ref=f1e88]: Ulrich Schnauss
+          - generic [ref=f1e89]: ●
+        - listitem [ref=f1e90]:
+          - generic [ref=f1e91]: Kirk Degiorgio
+          - generic [ref=f1e92]: ●
+        - listitem [ref=f1e93]:
+          - generic [ref=f1e94]: Rok
+          - generic [ref=f1e95]: ●
+        - listitem [ref=f1e96]:
+          - generic [ref=f1e97]: Autotune
+          - generic [ref=f1e98]: ●
+        - listitem [ref=f1e99]:
+          - generic [ref=f1e100]: Latex
+          - generic [ref=f1e101]: ●
+        - listitem [ref=f1e102]:
+          - generic [ref=f1e103]: Steril
+          - generic [ref=f1e104]: ●
+        - listitem [ref=f1e105]:
+          - generic [ref=f1e106]: Indy Toureau
+          - generic [ref=f1e107]: ●
+        - listitem [ref=f1e108]:
+          - generic [ref=f1e109]: R-04
+          - generic [ref=f1e110]: ●
+        - listitem [ref=f1e111]:
+          - generic [ref=f1e112]: Kei How
+          - generic [ref=f1e113]: ●
+        - listitem [ref=f1e114]:
+          - generic [ref=f1e115]: Explain
+          - generic [ref=f1e116]: ●
+        - listitem [ref=f1e117]:
+          - generic [ref=f1e118]: Tigerskin
+          - generic [ref=f1e119]: ●
+        - listitem [ref=f1e120]:
+          - generic [ref=f1e121]: Funk D'Void
+          - generic [ref=f1e122]: ●
+        - listitem [ref=f1e123]:
+          - generic [ref=f1e124]: Pig & Dan
+          - generic [ref=f1e125]: ●
+        - listitem [ref=f1e126]:
+          - generic [ref=f1e127]: Donna Summer
+          - generic [ref=f1e128]: ●
+        - listitem [ref=f1e129]:
+          - generic [ref=f1e130]: Golden Boy
+          - generic [ref=f1e131]: ●
+        - listitem [ref=f1e132]:
+          - generic [ref=f1e133]: Toktok
+          - generic [ref=f1e134]: ●
+      - list [ref=f1e135]:
+        - listitem [ref=f1e136]:
+          - generic [ref=f1e137]: Claude Young
+          - generic [ref=f1e138]: ●
+        - listitem [ref=f1e139]:
+          - generic [ref=f1e140]: The Hacker
+          - generic [ref=f1e141]: ●
+        - listitem [ref=f1e142]:
+          - generic [ref=f1e143]: John Selway
+          - generic [ref=f1e144]: ●
+        - listitem [ref=f1e145]:
+          - generic [ref=f1e146]: Ken Ishii
+          - generic [ref=f1e147]: ●
+        - listitem [ref=f1e148]:
+          - generic [ref=f1e149]: Takkyu Ishino
+          - generic [ref=f1e150]: ●
+        - listitem [ref=f1e151]:
+          - generic [ref=f1e152]: Westbam
+          - generic [ref=f1e153]: ●
+        - listitem [ref=f1e154]:
+          - generic [ref=f1e155]: Air Liquide
+          - generic [ref=f1e156]: ●
+        - listitem [ref=f1e157]:
+          - generic [ref=f1e158]: Ulrich Schnauss
+          - generic [ref=f1e159]: ●
+        - listitem [ref=f1e160]:
+          - generic [ref=f1e161]: Kirk Degiorgio
+          - generic [ref=f1e162]: ●
+        - listitem [ref=f1e163]:
+          - generic [ref=f1e164]: Rok
+          - generic [ref=f1e165]: ●
+        - listitem [ref=f1e166]:
+          - generic [ref=f1e167]: Autotune
+          - generic [ref=f1e168]: ●
+        - listitem [ref=f1e169]:
+          - generic [ref=f1e170]: Latex
+          - generic [ref=f1e171]: ●
+        - listitem [ref=f1e172]:
+          - generic [ref=f1e173]: Steril
+          - generic [ref=f1e174]: ●
+        - listitem [ref=f1e175]:
+          - generic [ref=f1e176]: Indy Toureau
+          - generic [ref=f1e177]: ●
+        - listitem [ref=f1e178]:
+          - generic [ref=f1e179]: R-04
+          - generic [ref=f1e180]: ●
+        - listitem [ref=f1e181]:
+          - generic [ref=f1e182]: Kei How
+          - generic [ref=f1e183]: ●
+        - listitem [ref=f1e184]:
+          - generic [ref=f1e185]: Explain
+          - generic [ref=f1e186]: ●
+        - listitem [ref=f1e187]:
+          - generic [ref=f1e188]: Tigerskin
+          - generic [ref=f1e189]: ●
+        - listitem [ref=f1e190]:
+          - generic [ref=f1e191]: Funk D'Void
+          - generic [ref=f1e192]: ●
+        - listitem [ref=f1e193]:
+          - generic [ref=f1e194]: Pig & Dan
+          - generic [ref=f1e195]: ●
+        - listitem [ref=f1e196]:
+          - generic [ref=f1e197]: Donna Summer
+          - generic [ref=f1e198]: ●
+        - listitem [ref=f1e199]:
+          - generic [ref=f1e200]: Golden Boy
+          - generic [ref=f1e201]: ●
+        - listitem [ref=f1e202]:
+          - generic [ref=f1e203]: Toktok
+          - generic [ref=f1e204]: ●
+    - generic [ref=f1e207]:
+      - paragraph [ref=f1e208]:
+        - generic [ref=f1e209]: "01"
+        - generic [ref=f1e211]: Roster
+      - generic [ref=f1e212]:
+        - generic [ref=f1e213]:
+          - heading "Who has released here" [level=2] [ref=f1e214]
+          - link "All artists" [ref=f1e215] [cursor=pointer]:
+            - /url: /artists
+        - paragraph [ref=f1e219]: Detroit, Tokyo, Grenoble, New York, Berlin. The label never had a house sound so much as a standard — records that work at 3am and still hold up on headphones the next afternoon.
+        - list [ref=f1e221]:
+          - listitem [ref=f1e222]:
+            - heading "Claude Young" [level=3] [ref=f1e224]
+            - generic [ref=f1e225]:
+              - paragraph [ref=f1e226]: Detroit second wave, one of the fastest hands to ever touch three decks.
+              - paragraph [ref=f1e227]: Detroit
+          - listitem [ref=f1e228]:
+            - heading "The Hacker" [level=3] [ref=f1e230]
+            - generic [ref=f1e231]:
+              - paragraph [ref=f1e232]: The electro-body axis of French techno.
+              - paragraph [ref=f1e233]: Grenoble
+          - listitem [ref=f1e234]:
+            - heading "John Selway" [level=3] [ref=f1e236]
+            - generic [ref=f1e237]:
+              - paragraph [ref=f1e238]: New York techno, Disturbance and Sync Research.
+              - paragraph [ref=f1e239]: New York
+          - listitem [ref=f1e240]:
+            - heading "Ken Ishii" [level=3] [ref=f1e242]
+            - generic [ref=f1e243]:
+              - paragraph [ref=f1e244]: The producer who put Japanese techno on the world map.
+              - paragraph [ref=f1e245]: Tokyo
+          - listitem [ref=f1e246]:
+            - heading "Takkyu Ishino" [level=3] [ref=f1e248]
+            - generic [ref=f1e249]:
+              - paragraph [ref=f1e250]: Denki Groove. Shared the Matadors Of Techno record with Beroshima.
+              - paragraph [ref=f1e251]: Tokyo
+          - listitem [ref=f1e252]:
+            - heading "Westbam" [level=3] [ref=f1e254]
+            - generic [ref=f1e255]:
+              - paragraph [ref=f1e256]: Low Spirit, Mayday, and half of what German techno means in public.
+              - paragraph [ref=f1e257]: Berlin
+          - listitem [ref=f1e258]:
+            - heading "Air Liquide" [level=3] [ref=f1e260]
+            - generic [ref=f1e261]:
+              - paragraph [ref=f1e262]: Ingmar Koch and Cem Oral. The acid end of German electronics.
+              - paragraph [ref=f1e263]: Cologne / Frankfurt
+          - listitem [ref=f1e264]:
+            - heading "Ulrich Schnauss" [level=3] [ref=f1e266]
+            - generic [ref=f1e267]:
+              - paragraph [ref=f1e268]: Shoegaze in synth form. Recurring collaborator across the catalogue.
+              - paragraph [ref=f1e269]: Berlin
+    - generic [ref=f1e271]:
+      - paragraph [ref=f1e272]:
+        - generic [ref=f1e273]: "01.5"
+        - generic [ref=f1e275]: The imprints
+      - list [ref=f1e276]:
+        - listitem [ref=f1e277]:
+          - paragraph [ref=f1e278]: "1993"
+          - heading "Acid Orange" [level=3] [ref=f1e279]
+          - paragraph [ref=f1e280]: The first imprint. Twenty records, and Toktok's debut single among them.
+        - listitem [ref=f1e281]:
+          - paragraph [ref=f1e282]: "1996"
+          - heading "Müller Records" [level=3] [ref=f1e283]
+          - paragraph [ref=f1e284]: The main line. Berlin techno with acid DNA, open to Detroit and Tokyo alike.
+        - listitem [ref=f1e285]:
+          - paragraph [ref=f1e286]: "2000"
+          - heading "Beroshima Music" [level=3] [ref=f1e287]
+          - paragraph [ref=f1e288]: Frank's own artist imprint, opened with the album POP · Pornography Of Performance.
+        - listitem [ref=f1e289]:
+          - paragraph [ref=f1e290]: "2020"
+          - heading "Mad Musician" [level=3] [ref=f1e291]
+          - paragraph [ref=f1e292]: The series that reopened the vault — new work and remixes, numbered from one again.
+    - generic [ref=f1e295]:
+      - paragraph [ref=f1e296]:
+        - generic [ref=f1e297]: "02"
+        - generic [ref=f1e299]: Catalogue
+      - generic [ref=f1e300]:
+        - generic [ref=f1e301]:
+          - heading "Pressed, numbered, still spinning" [level=2] [ref=f1e302]
+          - link "Full catalogue" [ref=f1e303] [cursor=pointer]:
+            - /url: /catalog
+        - table [ref=f1e309]:
+          - caption [ref=f1e310]: Cat. no.
+          - rowgroup [ref=f1e311]:
+            - row [ref=f1e312]:
+              - columnheader "Cat. no." [ref=f1e313]
+              - columnheader "Title" [ref=f1e314]
+              - columnheader "Artist" [ref=f1e315]
+              - columnheader "Remix / feat." [ref=f1e316]
+              - columnheader "Year" [ref=f1e317]
+          - rowgroup [ref=f1e318]:
+            - row [ref=f1e319]:
+              - cell "Mad Musician 05 Mad Musician" [ref=f1e320]:
+                - text: Mad Musician 05
+                - generic [ref=f1e321]: Mad Musician
+              - cell "The Moment" [ref=f1e322]
+              - cell "Frank Müller (Beroshima)" [ref=f1e323]
+              - cell "Donna Summer" [ref=f1e324]
+              - cell "—" [ref=f1e325]
+            - row [ref=f1e326]:
+              - cell "Mad Musician 03 Mad Musician" [ref=f1e327]:
+                - text: Mad Musician 03
+                - generic [ref=f1e328]: Mad Musician
+              - cell "TGV" [ref=f1e329]
+              - cell "Frank Müller (Beroshima)" [ref=f1e330]
+              - cell "Ken Ishii" [ref=f1e331]
+              - cell "—" [ref=f1e332]
+            - row [ref=f1e333]:
+              - cell "Mad Musician 02 Mad Musician" [ref=f1e334]:
+                - text: Mad Musician 02
+                - generic [ref=f1e335]: Mad Musician
+              - cell "Horizon & Remixes" [ref=f1e336]
+              - cell "Frank Müller (Beroshima)" [ref=f1e337]
+              - cell "Tigerskin, Ulrich Schnauss, Funk D'Void" [ref=f1e338]
+              - cell "—" [ref=f1e339]
+            - row [ref=f1e340]:
+              - cell "Mad Musician 01 Mad Musician" [ref=f1e341]:
+                - text: Mad Musician 01
+                - generic [ref=f1e342]: Mad Musician
+              - cell "Emphasis EP" [ref=f1e343]
+              - cell "Frank Müller (Beroshima)" [ref=f1e344]
+              - cell "Kirk Degiorgio" [ref=f1e345]
+              - cell "2020" [ref=f1e346]
+            - row [ref=f1e347]:
+              - cell "Muller 2102 Müller Records" [ref=f1e348]:
+                - text: Muller 2102
+                - generic [ref=f1e349]: Müller Records
+              - cell "DeeBeePhunky" [ref=f1e350]
+              - cell "Frank Müller (Beroshima)" [ref=f1e351]
+              - cell "—" [ref=f1e352]
+              - cell "—" [ref=f1e353]
+            - row [ref=f1e354]:
+              - cell "Muller 2101 Müller Records" [ref=f1e355]:
+                - text: Muller 2101
+                - generic [ref=f1e356]: Müller Records
+              - cell "Endlos" [ref=f1e357]
+              - cell "Westbam" [ref=f1e358]
+              - cell "—" [ref=f1e359]
+              - cell "—" [ref=f1e360]
+            - row [ref=f1e361]:
+              - cell "Muller 2100 Müller Records" [ref=f1e362]:
+                - text: Muller 2100
+                - generic [ref=f1e363]: Müller Records
+              - cell "This Could Be …" [ref=f1e364]
+              - cell "Frank Müller (Beroshima)" [ref=f1e365]
+              - cell "—" [ref=f1e366]
+              - cell "—" [ref=f1e367]
+            - row [ref=f1e368]:
+              - cell "Muller 2099 Müller Records" [ref=f1e369]:
+                - text: Muller 2099
+                - generic [ref=f1e370]: Müller Records
+              - cell "essentiel" [ref=f1e371]
+              - cell "Steril" [ref=f1e372]
+              - cell "Latex" [ref=f1e373]
+              - cell "—" [ref=f1e374]
+            - row [ref=f1e375]:
+              - cell "Muller 2098 Müller Records" [ref=f1e376]:
+                - text: Muller 2098
+                - generic [ref=f1e377]: Müller Records
+              - cell "Tragedy EP" [ref=f1e378]
+              - cell "Beroshima / Frank Müller" [ref=f1e379]
+              - cell "—" [ref=f1e380]
+              - cell "—" [ref=f1e381]
+            - row [ref=f1e382]:
+              - cell "Muller 2097 Müller Records" [ref=f1e383]:
+                - text: Muller 2097
+                - generic [ref=f1e384]: Müller Records
+              - cell "Tou Hoku Shin EP" [ref=f1e385]
+              - cell "R-04" [ref=f1e386]
+              - cell "Kei How, Explain" [ref=f1e387]
+              - cell "—" [ref=f1e388]
+    - generic [ref=f1e391]:
+      - paragraph [ref=f1e392]:
+        - generic [ref=f1e393]: "03"
+        - generic [ref=f1e395]: History
+      - blockquote [ref=f1e396]: Started in a Berlin that was still deciding what it was going to be.
+      - generic [ref=f1e397]:
+        - paragraph [ref=f1e398]: Frank Müller moved to Berlin in 1992, a trained mechanical engineer who had been DJing since the mid-eighties. Acid Orange followed in 1993 and ran twenty records deep, including Toktok's debut single. Müller Records opened in 1996.
+        - paragraph [ref=f1e399]: "What followed was thirty years of records that refused to pick a lane: Detroit techno, acid, new wave melody, and a permanent open line to Tokyo, where Beroshima plays to rooms most European producers never see."
+      - link "The full story" [ref=f1e401] [cursor=pointer]:
+        - /url: /history
+    - generic [ref=f1e407]:
+      - paragraph [ref=f1e408]:
+        - generic [ref=f1e409]: "04"
+        - generic [ref=f1e411]: Merch
+      - heading "The mark on cotton" [level=2] [ref=f1e412]
+      - paragraph [ref=f1e413]: The logo has outlasted most of the clubs it was played in. Shirts, hoodies, slipmats and record bundles — built around the mark, not printed over it.
+      - generic [ref=f1e414]:
+        - link "See the merch" [ref=f1e415] [cursor=pointer]:
+          - /url: /merch
+        - link "Buy records on Bandcamp" [ref=f1e419] [cursor=pointer]:
+          - /url: https://mullerrecords.bandcamp.com
+  - contentinfo [ref=f1e423]:
+    - generic [ref=f1e424]:
+      - generic [ref=f1e425]:
+        - generic [ref=f1e426]:
+          - img "Müller Records" [ref=f1e427]
+          - paragraph [ref=f1e432]: Berlin techno since 1996
+          - paragraph [ref=f1e433]: Müller Records is the Berlin label founded by Frank Müller — Beroshima — in 1996, alongside Acid Orange, Beroshima Music and the Mad Musician series.
+        - navigation "Site" [ref=f1e434]:
+          - paragraph [ref=f1e435]: Site
+          - list [ref=f1e436]:
+            - listitem [ref=f1e437]:
+              - link "Catalogue" [ref=f1e438] [cursor=pointer]:
+                - /url: /catalog
+            - listitem [ref=f1e439]:
+              - link "Artists" [ref=f1e440] [cursor=pointer]:
+                - /url: /artists
+            - listitem [ref=f1e441]:
+              - link "History" [ref=f1e442] [cursor=pointer]:
+                - /url: /history
+            - listitem [ref=f1e443]:
+              - link "Merch" [ref=f1e444] [cursor=pointer]:
+                - /url: /merch
+            - listitem [ref=f1e445]:
+              - link "Contact" [ref=f1e446] [cursor=pointer]:
+                - /url: /contact
+        - navigation "Elsewhere" [ref=f1e447]:
+          - paragraph [ref=f1e448]: Elsewhere
+          - list [ref=f1e449]:
+            - listitem [ref=f1e450]:
+              - link "Bandcamp" [ref=f1e451] [cursor=pointer]:
+                - /url: https://mullerrecords.bandcamp.com
+            - listitem [ref=f1e452]:
+              - link "Resident Advisor" [ref=f1e453] [cursor=pointer]:
+                - /url: https://ra.co/dj/beroshima
+            - listitem [ref=f1e454]:
+              - link "Discogs" [ref=f1e455] [cursor=pointer]:
+                - /url: https://www.discogs.com/label/1941-M%C3%BCller-Records
+            - listitem [ref=f1e456]:
+              - link "X" [ref=f1e457] [cursor=pointer]:
+                - /url: https://x.com/beroshima
+            - listitem [ref=f1e458]:
+              - link "Facebook" [ref=f1e459] [cursor=pointer]:
+                - /url: https://www.facebook.com/beroshima
+      - generic [ref=f1e460]:
+        - paragraph [ref=f1e461]: © 1996–2026 Müller Records, Berlin
+        - paragraph [ref=f1e462]: Black · White · Red
+  - button "Open Next.js Dev Tools" [ref=f1e468] [cursor=pointer]

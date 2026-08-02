@@ -1,0 +1,141 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - link "Müller Records Müller·Records" [ref=f3e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f3e5]:
+          - img "Müller Records" [ref=f3e6]
+          - generic [ref=f3e11]: Müller·Records
+      - navigation "Primary" [ref=f3e12]:
+        - link "Catalogue" [ref=f3e13] [cursor=pointer]:
+          - /url: /catalog
+        - link "Artists" [ref=f3e14] [cursor=pointer]:
+          - /url: /artists
+        - link "History" [ref=f3e15] [cursor=pointer]:
+          - /url: /history
+        - link "Merch" [ref=f3e16] [cursor=pointer]:
+          - /url: /merch
+        - link "Contact" [ref=f3e17] [cursor=pointer]:
+          - /url: /contact
+        - generic [ref=f3e18]:
+          - link "en" [ref=f3e20] [cursor=pointer]:
+            - /url: /en/merch
+          - generic [ref=f3e21]:
+            - generic [ref=f3e22]: /
+            - link "de" [ref=f3e23] [cursor=pointer]:
+              - /url: /de/merch
+  - main [ref=f3e24]:
+    - generic [ref=f3e26]:
+      - paragraph [ref=f3e27]:
+        - generic [ref=f3e28]: "04"
+        - generic [ref=f3e30]: Merch
+      - heading "Merch" [level=1] [ref=f3e31]
+      - paragraph [ref=f3e32]: Built around the logo. Shirts, hoodies, bags, slipmats — all of it going live in stages, all of it sold through the label's shop rather than a third-party print farm.
+    - list [ref=f3e35]:
+      - listitem [ref=f3e36]:
+        - img "Müller Records" [ref=f3e38]
+        - generic [ref=f3e43]:
+          - generic [ref=f3e44]:
+            - heading "Logo Tee" [level=3] [ref=f3e45]
+            - paragraph [ref=f3e46]: Heavyweight black cotton, mark on the chest, catalogue numbers down the back.
+          - paragraph [ref=f3e47]: €35.00
+        - paragraph [ref=f3e49]: Coming soon
+      - listitem [ref=f3e50]:
+        - img "Müller Records" [ref=f3e52]
+        - generic [ref=f3e57]:
+          - generic [ref=f3e58]:
+            - heading "Logo Hoodie" [level=3] [ref=f3e59]
+            - paragraph [ref=f3e60]: The one that gets worn to the airport at 6am. Black on black, red mark.
+          - paragraph [ref=f3e61]: €75.00
+        - paragraph [ref=f3e63]: Coming soon
+      - listitem [ref=f3e64]:
+        - img "Müller Records" [ref=f3e66]
+        - generic [ref=f3e71]:
+          - generic [ref=f3e72]:
+            - heading "Record Tote" [level=3] [ref=f3e73]
+            - paragraph [ref=f3e74]: Sized for twelve-inches, not for groceries. Canvas, reinforced base.
+          - paragraph [ref=f3e75]: €20.00
+        - paragraph [ref=f3e77]: Coming soon
+      - listitem [ref=f3e78]:
+        - img "Müller Records" [ref=f3e80]
+        - generic [ref=f3e85]:
+          - generic [ref=f3e86]:
+            - heading "Slipmats (Pair)" [level=3] [ref=f3e87]
+            - paragraph [ref=f3e88]: Felt, seven inch centre, mark printed in red. Made to be used, not framed.
+          - paragraph [ref=f3e89]: €25.00
+        - paragraph [ref=f3e91]: Coming soon
+      - listitem [ref=f3e92]:
+        - img "Müller Records" [ref=f3e94]
+        - generic [ref=f3e99]:
+          - generic [ref=f3e100]:
+            - heading "Vinyl Bundle" [level=3] [ref=f3e101]
+            - paragraph [ref=f3e102]: A hand-picked run of records from the catalogue, priced under the sum of its parts.
+          - paragraph [ref=f3e103]: TBD
+        - paragraph [ref=f3e105]: Coming soon
+      - listitem [ref=f3e106]:
+        - img "Müller Records" [ref=f3e108]
+        - generic [ref=f3e113]:
+          - generic [ref=f3e114]:
+            - heading "Cap" [level=3] [ref=f3e115]
+            - paragraph [ref=f3e116]: Unstructured, embroidered mark, no oversized branding.
+          - paragraph [ref=f3e117]: €30.00
+        - paragraph [ref=f3e119]: Coming soon
+    - generic [ref=f3e122]:
+      - generic [ref=f3e123]:
+        - heading "Records first" [level=2] [ref=f3e124]
+        - paragraph [ref=f3e125]: The merch exists because the records do. Everything in the catalogue that is still available sits on Bandcamp — digital, and vinyl while stock lasts.
+        - link "Müller Records on Bandcamp" [ref=f3e126] [cursor=pointer]:
+          - /url: https://mullerrecords.bandcamp.com
+      - generic [ref=f3e130]:
+        - heading "Stores & wholesale" [level=2] [ref=f3e131]
+        - paragraph [ref=f3e132]: "Record shops and distributors: get in touch directly for wholesale terms on merch and back catalogue."
+        - link "info@mullerrecords.com" [ref=f3e133] [cursor=pointer]:
+          - /url: mailto:info@mullerrecords.com
+  - contentinfo [ref=f3e137]:
+    - generic [ref=f3e138]:
+      - generic [ref=f3e139]:
+        - generic [ref=f3e140]:
+          - img "Müller Records" [ref=f3e141]
+          - paragraph [ref=f3e146]: Berlin techno since 1996
+          - paragraph [ref=f3e147]: Müller Records is the Berlin label founded by Frank Müller — Beroshima — in 1996, alongside Acid Orange, Beroshima Music and the Mad Musician series.
+        - navigation "Site" [ref=f3e148]:
+          - paragraph [ref=f3e149]: Site
+          - list [ref=f3e150]:
+            - listitem [ref=f3e151]:
+              - link "Catalogue" [ref=f3e152] [cursor=pointer]:
+                - /url: /catalog
+            - listitem [ref=f3e153]:
+              - link "Artists" [ref=f3e154] [cursor=pointer]:
+                - /url: /artists
+            - listitem [ref=f3e155]:
+              - link "History" [ref=f3e156] [cursor=pointer]:
+                - /url: /history
+            - listitem [ref=f3e157]:
+              - link "Merch" [ref=f3e158] [cursor=pointer]:
+                - /url: /merch
+            - listitem [ref=f3e159]:
+              - link "Contact" [ref=f3e160] [cursor=pointer]:
+                - /url: /contact
+        - navigation "Elsewhere" [ref=f3e161]:
+          - paragraph [ref=f3e162]: Elsewhere
+          - list [ref=f3e163]:
+            - listitem [ref=f3e164]:
+              - link "Bandcamp" [ref=f3e165] [cursor=pointer]:
+                - /url: https://mullerrecords.bandcamp.com
+            - listitem [ref=f3e166]:
+              - link "Resident Advisor" [ref=f3e167] [cursor=pointer]:
+                - /url: https://ra.co/dj/beroshima
+            - listitem [ref=f3e168]:
+              - link "Discogs" [ref=f3e169] [cursor=pointer]:
+                - /url: https://www.discogs.com/label/1941-M%C3%BCller-Records
+            - listitem [ref=f3e170]:
+              - link "X" [ref=f3e171] [cursor=pointer]:
+                - /url: https://x.com/beroshima
+            - listitem [ref=f3e172]:
+              - link "Facebook" [ref=f3e173] [cursor=pointer]:
+                - /url: https://www.facebook.com/beroshima
+      - generic [ref=f3e174]:
+        - paragraph [ref=f3e175]: © 1996–2026 Müller Records, Berlin
+        - paragraph [ref=f3e176]: Black · White · Red
+  - button "Open Next.js Dev Tools" [ref=f3e182] [cursor=pointer]
+  - alert [ref=f3e186]

@@ -1,26 +1,134 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/*
+ * Müller Records — black, white, one red.
+ *
+ * The rule the whole design hangs on: red is never decoration. It marks the one
+ * thing on screen that matters most (a catalogue number, an active link, a
+ * headline artist). If a screen has red in three places, two of them are wrong.
+ *
+ * There is no light mode. A techno label at 3am does not have a light mode.
+ */
+
+@theme {
+  --color-ink: #000000;
+  --color-paper: #ffffff;
+  --color-blood: #e5001a;
+  --color-blood-dim: #8c0010;
+
+  /* Greys, dark to light. Hairline rules live at --color-rule. */
+  --color-smoke: #0a0a0a;
+  --color-rule: #1f1f1f;
+  --color-mute: #6b6b6b;
+  --color-dim: #a3a3a3;
+
+  --font-display: var(--font-archivo), "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-mono-jb), ui-monospace, "SF Mono", monospace;
+
+  /* One consistent page gutter so the vertical rules line up across sections. */
+  --spacing-gutter: 1.5rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background: var(--color-ink);
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    font-family: var(--font-mono);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--color-blood);
+    color: var(--color-paper);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-blood);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /*
+   * Display type. Tracking goes negative as size goes up — at 12rem the default
+   * letter spacing reads as gaps between the letters rather than a word.
+   */
+  .type-display {
+    font-family: var(--font-display);
+    font-weight: 800;
+    line-height: 0.82;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+  }
+
+  .type-heading {
+    font-family: var(--font-display);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+  }
+
+  /* The small mono label that sits above a section, e.g. "02 / CATALOGUE". */
+  .type-label {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  /* Faint vertical rules — the grid the 90s techno sleeve was printed on. */
+  .grid-rules {
+    background-image: repeating-linear-gradient(
+      to right,
+      var(--color-rule) 0,
+      var(--color-rule) 1px,
+      transparent 1px,
+      transparent calc(100% / 6)
+    );
+  }
+
+  /* Fine horizontal scanlines, barely there. Kills the flatness of pure black. */
+  .scanlines::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.025) 0,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
