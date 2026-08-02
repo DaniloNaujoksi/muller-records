@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/sections/PageHero";
 import { ArtistGrid } from "@/components/sections/ArtistGrid";
 import { artists, artistCount } from "@/data/artists";
+import takkyu from "@/assets/photos/takkyu-ishino.jpg";
 
 export async function generateMetadata({
   params,
@@ -12,7 +13,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "artists" });
-  return { title: t("title"), description: t("lede") };
+  // `lede` interpolates {count}; without it next-intl throws FORMATTING_ERROR
+  // and the page ships with no meta description at all.
+  return { title: t("title"), description: t("lede", { count: artistCount }) };
 }
 
 export default async function ArtistsPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -31,6 +34,10 @@ export default async function ArtistsPage({ params }: { params: Promise<{ locale
         label={t("label")}
         title={t("title")}
         lede={t("lede", { count: artistCount })}
+        photo={takkyu}
+        photoAlt={t("heroPhotoAlt")}
+        /* Takkyu's face sits about a third down the square frame. */
+        photoPosition="object-[center_32%]"
       />
 
       <section className="border-b border-rule py-20">

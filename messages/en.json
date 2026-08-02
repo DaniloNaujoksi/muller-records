@@ -70,6 +70,7 @@
     "label": "Roster",
     "title": "Artists",
     "lede": "{count} names have put a record or a remix out on a Müller imprint. Some of them define whole cities of this music.",
+    "heroPhotoAlt": "Takkyu Ishino standing in a club, mirrorball light across the room behind him",
     "releasedHere": "Released on the label",
     "remixedHere": "Remixed for the label",
     "remixNote": "Remix credits, kept separate from full releases on purpose — a remix is a different kind of relationship with a label, and both are worth naming accurately.",
@@ -96,6 +97,7 @@
     "label": "History",
     "title": "History & impact",
     "lede": "Thirty years of a Berlin label, told through the records that changed what it was.",
+    "heroPhotoAlt": "Sleeve of Beroshima's The Catastrophe Ballet: a man kneeling on a beach, vacuuming the sand",
     "photos": {
       "tapeAlt": "Frank Müller at a reel-to-reel tape machine, in a suit and tie",
       "tapeCaption": "Tape, still",
@@ -176,6 +178,7 @@
     "label": "Merch",
     "title": "Merch",
     "lede": "Shirts and records, straight from the label's own Bandcamp store. Every buy button goes there — no second checkout, no third-party print farm.",
+    "heroPhotoAlt": "Beroshima behind the decks in a dark club, light trails across the mixer",
     "buy": "Buy",
     "soldOut": "Sold out",
     "count": "{count} listed",
@@ -210,6 +213,7 @@
     "label": "Contact",
     "title": "Contact",
     "lede": "Demos, bookings, press. One address, read by the label.",
+    "heroPhotoAlt": "Frank Müller mixing, headphones round his neck, hands on the mixer",
     "elsewhere": "Elsewhere",
     "channels": {
       "demos": {

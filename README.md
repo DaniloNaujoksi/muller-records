@@ -58,9 +58,21 @@ caller's `h-9` (same stylesheet, source order decides) and silently blew the
 header logo up to full width.
 
 Press photographs live in `src/assets/photos/` and always render through
-`Photo` (or the hero's own layer), which forces grayscale and extra contrast.
+`Photo` (or a hero's own layer), which forces grayscale and extra contrast.
 Full-colour photography would compete with the one-red rule, and desaturating
-also hides how differently the source shots were graded.
+also hides how differently the source shots were graded. Product shots on the
+merch page are the exception — there the actual colour is what is being sold.
+
+Each sub-page hero takes a `photo`, plus `photoPosition` and `photoOpacity`.
+Both need tuning per image and neither has a sane default:
+
+- The heroes are far wider than they are tall and every source is square, so
+  `object-cover` scales to the width and only the **vertical** half of
+  `object-position` does anything. An X offset looks like it works and changes
+  nothing.
+- The sources run from a bright sepia sleeve to near-black club shots. One
+  opacity cannot serve both: 40% reads as a photograph on the bright ones and
+  as nothing at all on the dark ones.
 
 `VinylBackdrop` is the exception: Müller 2037 cut out of its sleeve shot and
 sunk into the page, slowly rotating. It is the only red on the site that isn't

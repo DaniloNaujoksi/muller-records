@@ -7,6 +7,7 @@ import { MerchGrid } from "@/components/sections/MerchGrid";
 import { ApparelGrid } from "@/components/sections/ApparelGrid";
 import { apparelProducts, records, recordsInStock } from "@/data/merch";
 import { LINKS, SITE } from "@/lib/constants";
+import booth from "@/assets/photos/beroshima-booth.jpg";
 
 export async function generateMetadata({
   params,
@@ -27,7 +28,16 @@ export default async function MerchPage({ params }: { params: Promise<{ locale: 
 
   return (
     <>
-      <PageHero index="04" label={t("label")} title={t("title")} lede={t("lede")} />
+      <PageHero
+        index="04"
+        label={t("label")}
+        title={t("title")}
+        lede={t("lede")}
+        photo={booth}
+        photoAlt={t("heroPhotoAlt")}
+        photoPosition="object-[center_35%]"
+        photoOpacity="opacity-70"
+      />
 
       {/* Records first: they are what the label actually sells, and the shirts
           are two products where the vinyl is thirty. */}

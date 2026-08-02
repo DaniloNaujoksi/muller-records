@@ -4,6 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/sections/PageHero";
 import { LINKS, SITE } from "@/lib/constants";
+import decks from "@/assets/photos/beroshima-decks.jpeg";
 
 export async function generateMetadata({
   params,
@@ -32,7 +33,18 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
   return (
     <>
-      <PageHero index="05" label={t("label")} title={t("title")} lede={t("lede")} />
+      <PageHero
+        index="05"
+        label={t("label")}
+        title={t("title")}
+        lede={t("lede")}
+        photo={decks}
+        photoAlt={t("heroPhotoAlt")}
+        /* His face sits high in the square; lower crops catch only the mixer. */
+        photoPosition="object-[center_22%]"
+        /* Near-black club shot: at the default 40% it disappears entirely. */
+        photoOpacity="opacity-75"
+      />
 
       <section className="border-b border-rule py-20">
         <Container wide>
