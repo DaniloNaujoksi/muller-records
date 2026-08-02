@@ -17,10 +17,13 @@ import vinyl from "@/assets/photos/muller-2037-vinyl.png";
 export function VinylBackdrop({
   className,
   side = "right",
+  opacityClassName = "opacity-25",
 }: {
   className?: string;
   /** Which edge the disc bleeds off. */
   side?: "left" | "right";
+  /** The hero runs it brighter — there it is the thing you are meant to notice. */
+  opacityClassName?: string;
 }) {
   return (
     <div
@@ -38,7 +41,7 @@ export function VinylBackdrop({
         src={vinyl}
         alt=""
         sizes="(min-width: 1024px) 860px, 85vw"
-        className="animate-spin-slow h-full w-full object-contain opacity-25"
+        className={clsx("animate-spin-slow h-full w-full object-contain", opacityClassName)}
       />
     </div>
   );

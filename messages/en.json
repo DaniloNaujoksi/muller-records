@@ -181,7 +181,12 @@
     "count": "{count} listed",
     "apparel": {
       "title": "Shirts",
-      "body": "Silver print on black, from the Polyphonication run. Sizes are listed as they were pressed — when a size is gone, it is gone."
+      "body": "Silver print, two colourways. Pick a cut and a size — each one is its own listing, and a size crossed out is a size that is gone.",
+      "tee": "T-Shirt",
+      "cut": {
+        "men": "Men",
+        "woman": "Woman"
+      }
     },
     "vinyl": {
       "title": "Records in stock",

@@ -4,7 +4,9 @@ import type { StaticImageData } from "next/image";
 import img0033037789 from "@/assets/merch/0033037789.jpg";
 import img0033015861 from "@/assets/merch/0033015861.jpg";
 import img0033015837 from "@/assets/merch/0033015837.jpg";
+import img0033015830 from "@/assets/merch/0033015830.jpg";
 import img0033015822 from "@/assets/merch/0033015822.jpg";
+import img0033015666 from "@/assets/merch/0033015666.jpg";
 import img0033015639 from "@/assets/merch/0033015639.jpg";
 import img0033015511 from "@/assets/merch/0033015511.jpg";
 import img0041679770 from "@/assets/merch/0041679770.jpg";
@@ -58,7 +60,9 @@ export const merchImages: Record<string, StaticImageData> = {
   "0033037789": img0033037789,
   "0033015861": img0033015861,
   "0033015837": img0033015837,
+  "0033015830": img0033015830,
   "0033015822": img0033015822,
+  "0033015666": img0033015666,
   "0033015639": img0033015639,
   "0033015511": img0033015511,
   "0041679770": img0041679770,

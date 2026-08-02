@@ -4,6 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { LogoMark } from "@/components/ui/Logo";
+import { VinylBackdrop } from "@/components/ui/VinylBackdrop";
 import { SITE } from "@/lib/constants";
 import studio from "@/assets/photos/beroshima-studio.webp";
 
@@ -18,7 +19,13 @@ export function Hero() {
 
   return (
     <section className="scanlines relative flex min-h-[calc(100svh-4rem)] flex-col justify-between overflow-hidden border-b border-rule pb-10 pt-16">
-      {/* Photo layer, then a gradient that keeps the left column solid black. */}
+      {/*
+        Two background layers, split down the middle so they do not fight: the
+        studio photo held to the left behind the headline, and Müller 2037
+        turning off the right edge. The record is the first thing a visitor
+        should catch — it is the label's own artwork, and it does more work than
+        any press shot would.
+      */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <Image
           src={studio}
@@ -26,11 +33,13 @@ export function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[70%_center] opacity-30 grayscale contrast-125"
+          className="object-cover object-[25%_center] opacity-20 grayscale contrast-125"
         />
-        <div className="absolute inset-0 bg-linear-to-r from-ink via-ink/90 to-ink/25" />
+        <div className="absolute inset-0 bg-linear-to-r from-ink via-ink/90 to-ink/70" />
         <div className="absolute inset-0 bg-linear-to-t from-ink via-transparent to-ink/60" />
       </div>
+
+      <VinylBackdrop className="top-[45%]" opacityClassName="opacity-45" />
 
       {/* Faint grid rules, letting the black breathe without adding colour. */}
       <div aria-hidden className="grid-rules pointer-events-none absolute inset-0 opacity-40" />
@@ -69,8 +78,8 @@ export function Hero() {
               <ArrowUpRight className="h-4 w-4" />
             </Link>
           </div>
-          {/* The mark, nearly submerged — a watermark, not a second logo. */}
-          <LogoMark className="hidden h-36 text-paper/15 lg:block" />
+          {/* No watermark mark here any more — the record occupies that corner,
+              and two faint label marks in the same space read as a mistake. */}
         </div>
       </Container>
     </section>

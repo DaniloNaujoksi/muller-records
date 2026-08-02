@@ -37,7 +37,7 @@ Everything factual sits in `src/data/`:
 | `catalog.ts` | Releases, catalogue numbers, the four imprints, albums |
 | `artists.ts` | Roster, split into full releases and remix credits |
 | `timeline.ts` | Label history years, plus the stat-band numbers |
-| `merch.ts` | Merch items, prices, stock, Bandcamp links (scraped, see below) |
+| `merch.ts` | Merch items, prices, stock, Bandcamp links (scraped, see below). Records stay flat; shirts are grouped into `apparelProducts` by colourway, with cut and size as variants |
 | `merch-images.ts` | Static imports of the Bandcamp artwork, keyed by art id |
 
 Prose for the timeline and merch lives in `messages/*.json` under matching keys,
@@ -63,8 +63,9 @@ Full-colour photography would compete with the one-red rule, and desaturating
 also hides how differently the source shots were graded.
 
 `VinylBackdrop` is the exception: Müller 2037 cut out of its sleeve shot and
-sunk into the page at 25%, slowly rotating. It is the only red on the site that
-isn't a marker, so it stays on two sections — the merch teaser and the
+sunk into the page, slowly rotating. It is the only red on the site that isn't
+a marker, so it stays on three places — the homepage hero (brightest, at 45%,
+because it is meant to be noticed straight away), the merch teaser and the
 catalogue opener. More than that and the one flourish becomes wallpaper.
 
 ## Open items

@@ -181,7 +181,12 @@
     "count": "{count} gelistet",
     "apparel": {
       "title": "Shirts",
-      "body": "Silberdruck auf Schwarz, aus der Polyphonication-Auflage. Größen stehen so, wie sie gedruckt wurden — was weg ist, ist weg."
+      "body": "Silberdruck, zwei Farbvarianten. Schnitt und Größe wählen — jede ist ein eigenes Listing, und eine durchgestrichene Größe ist weg.",
+      "tee": "T-Shirt",
+      "cut": {
+        "men": "Herren",
+        "woman": "Damen"
+      }
     },
     "vinyl": {
       "title": "Platten auf Lager",

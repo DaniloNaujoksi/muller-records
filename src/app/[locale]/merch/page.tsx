@@ -4,7 +4,8 @@ import { ArrowUpRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/sections/PageHero";
 import { MerchGrid } from "@/components/sections/MerchGrid";
-import { apparel, records, recordsInStock } from "@/data/merch";
+import { ApparelGrid } from "@/components/sections/ApparelGrid";
+import { apparelProducts, records, recordsInStock } from "@/data/merch";
 import { LINKS, SITE } from "@/lib/constants";
 
 export async function generateMetadata({
@@ -28,19 +29,8 @@ export default async function MerchPage({ params }: { params: Promise<{ locale: 
     <>
       <PageHero index="04" label={t("label")} title={t("title")} lede={t("lede")} />
 
-      <section className="border-b border-rule py-20">
-        <Container wide>
-          <div className="flex flex-wrap items-baseline gap-4">
-            <h2 className="type-heading text-3xl md:text-4xl">{t("apparel.title")}</h2>
-            <span className="type-label text-mute">{t("count", { count: apparel.length })}</span>
-          </div>
-          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-mute">{t("apparel.body")}</p>
-          <div className="mt-10">
-            <MerchGrid items={apparel} />
-          </div>
-        </Container>
-      </section>
-
+      {/* Records first: they are what the label actually sells, and the shirts
+          are two products where the vinyl is thirty. */}
       <section className="border-b border-rule py-20">
         <Container wide>
           <div className="flex flex-wrap items-baseline gap-4">
@@ -52,6 +42,21 @@ export default async function MerchPage({ params }: { params: Promise<{ locale: 
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-mute">{t("vinyl.body")}</p>
           <div className="mt-10">
             <MerchGrid items={recordsInStock} />
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-b border-rule py-20">
+        <Container wide>
+          <div className="flex flex-wrap items-baseline gap-4">
+            <h2 className="type-heading text-3xl md:text-4xl">{t("apparel.title")}</h2>
+            <span className="type-label text-mute">
+              {t("count", { count: apparelProducts.length })}
+            </span>
+          </div>
+          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-mute">{t("apparel.body")}</p>
+          <div className="mt-10">
+            <ApparelGrid />
           </div>
         </Container>
       </section>

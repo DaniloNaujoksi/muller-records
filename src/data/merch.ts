@@ -32,6 +32,28 @@ export type MerchItem = {
   buyUrl: string;
 };
 
+/** One buyable size in one cut. Each is a separate Bandcamp listing. */
+export type ApparelVariant = {
+  id: string;
+  cut: "men" | "woman";
+  size: string;
+  priceCents: number | null;
+  soldOut: boolean;
+  buyUrl: string;
+};
+
+/**
+ * One shirt, with its cuts and sizes underneath. Bandcamp sells each size as
+ * its own product; showing them that way put six near-identical photographs of
+ * the same two shirts on the page.
+ */
+export type ApparelProduct = {
+  /** Art id of the photo this product shows. */
+  id: string;
+  colourway: string;
+  variants: ApparelVariant[];
+};
+
 export const merch: MerchItem[] = [
   {
     id: "0033037789",
@@ -58,12 +80,28 @@ export const merch: MerchItem[] = [
     buyUrl: "https://mullerrecords.bandcamp.com/merch/t-shirt-men-s-white-silver-print",
   },
   {
+    id: "0033015830",
+    kind: "apparel",
+    title: "T-Shirt Woman S Black / Silver Print",
+    priceCents: 1000,
+    soldOut: false,
+    buyUrl: "https://mullerrecords.bandcamp.com/merch/t-shirt-woman-s-black-silver-print",
+  },
+  {
     id: "0033015822",
     kind: "apparel",
     title: "T-Shirt Woman M Black / Silver Print",
     priceCents: 1000,
     soldOut: false,
     buyUrl: "https://mullerrecords.bandcamp.com/merch/t-shirt-woman-m-black-silver-print",
+  },
+  {
+    id: "0033015666",
+    kind: "apparel",
+    title: "T-Shirt Men S Black / Silver Print",
+    priceCents: 1000,
+    soldOut: false,
+    buyUrl: "https://mullerrecords.bandcamp.com/merch/t-shirt-men-s-black-silver-print",
   },
   {
     id: "0033015639",
@@ -555,10 +593,36 @@ export const merch: MerchItem[] = [
   },
 ];
 
-export const apparel = merch.filter((i) => i.kind === "apparel");
+export const apparelProducts: ApparelProduct[] = [
+  {
+    id: "0033037789",
+    colourway: "Black / Silver Print",
+    variants: [
+      { id: "0033037789", cut: "men", size: "S", priceCents: 1000, soldOut: false, buyUrl: "https://mullerrecords.bandcamp.com/merch/t-shirt-men-s-black-silver-print-2" },
+      { id: "0033015861", cut: "woman", size: "S", priceCents: 1000, soldOut: false, buyUrl: "https://mullerrecords.bandcamp.com/merch/t-shirt-woman-s-black-silver-print-2" },
+      { id: "0033015822", cut: "woman", size: "M", priceCents: 1000, soldOut: false, buyUrl: "https://mullerrecords.bandcamp.com/merch/t-shirt-woman-m-black-silver-print" },
+    ],
+  },
+  {
+    id: "0033015837",
+    colourway: "White / Silver Print",
+    variants: [
+      { id: "0033015837", cut: "men", size: "S", priceCents: null, soldOut: true, buyUrl: "https://mullerrecords.bandcamp.com/merch/t-shirt-men-s-white-silver-print" },
+      { id: "0033015511", cut: "woman", size: "S", priceCents: null, soldOut: true, buyUrl: "https://mullerrecords.bandcamp.com/merch/tshirt-woman-s-white-silver-print" },
+      { id: "0033015639", cut: "woman", size: "M", priceCents: null, soldOut: true, buyUrl: "https://mullerrecords.bandcamp.com/merch/tshirt-woman-m-white-silver-print" },
+    ],
+  },
+];
+
 export const records = merch.filter((i) => i.kind === "record");
 /** In-stock records only — sold-out pressings belong on the catalogue page. */
 export const recordsInStock = records.filter((i) => !i.soldOut);
+
+/** Cheapest in-stock size, for the price shown on the product tile. */
+export function apparelFrom(product: ApparelProduct): number | null {
+  const prices = product.variants.filter((v) => !v.soldOut && v.priceCents !== null).map((v) => v.priceCents!);
+  return prices.length ? Math.min(...prices) : null;
+}
 
 export function merchImage(id: string): StaticImageData | undefined {
   return merchImages[id];
