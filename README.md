@@ -61,6 +61,11 @@ Press photographs live in `src/assets/photos/` and always render through
 Full-colour photography would compete with the one-red rule, and desaturating
 also hides how differently the source shots were graded.
 
+`VinylBackdrop` is the exception: Müller 2037 cut out of its sleeve shot and
+sunk into the page at 25%, slowly rotating. It is the only red on the site that
+isn't a marker, so it stays on two sections — the merch teaser and the
+catalogue opener. More than that and the one flourish becomes wallpaper.
+
 ## Open items
 
 - **Catalogue completeness.** The listing is compiled from Bandcamp, Wikipedia,

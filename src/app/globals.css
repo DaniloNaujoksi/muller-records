@@ -132,3 +132,17 @@
     transform: translateX(-50%);
   }
 }
+
+/* Roughly one turn a minute — slower than a record, fast enough to notice. */
+@theme {
+  --animate-spin-slow: spin-slow 60s linear infinite;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

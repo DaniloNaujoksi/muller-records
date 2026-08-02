@@ -7,6 +7,7 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 import { Marquee } from "@/components/ui/Marquee";
 import { Reveal } from "@/components/ui/Reveal";
 import { Photo } from "@/components/ui/Photo";
+import { VinylBackdrop } from "@/components/ui/VinylBackdrop";
 import { Hero } from "@/components/sections/Hero";
 import { StatBand } from "@/components/sections/StatBand";
 import { ArtistGrid } from "@/components/sections/ArtistGrid";
@@ -24,11 +25,15 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <>
+      {/*
+        The roster ticker runs above the hero, hard under the navigation. It is
+        the first thing on the page on purpose: the names are the label's
+        strongest argument, and they land before a single line of copy is read.
+      */}
+      <Marquee items={artists.map((a) => a.name)} durationSeconds={80} />
+
       <Hero />
       <StatBand />
-
-      {/* The roster, read as a ticker before it is read as a list. */}
-      <Marquee items={artists.map((a) => a.name)} durationSeconds={80} />
 
       <Section index="01" label={t("artists.label")}>
         <div className="flex flex-wrap items-end justify-between gap-6">
@@ -168,6 +173,7 @@ function MerchTeaser() {
 
   return (
     <section className="scanlines relative overflow-hidden py-24 md:py-32">
+      <VinylBackdrop />
       <div aria-hidden className="grid-rules pointer-events-none absolute inset-0 opacity-30" />
       <Container wide className="relative">
         <Reveal>

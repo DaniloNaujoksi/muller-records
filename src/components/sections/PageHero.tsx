@@ -1,5 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { SectionLabel } from "@/components/ui/SectionLabel";
+import { VinylBackdrop } from "@/components/ui/VinylBackdrop";
 
 /** Shared opener for the sub-pages, so every one of them starts on the same grid. */
 export function PageHero({
@@ -7,14 +8,18 @@ export function PageHero({
   label,
   title,
   lede,
+  vinyl = false,
 }: {
   index: string;
   label: string;
   title: React.ReactNode;
   lede?: string;
+  /** Sink the record into the background. Reserved for the catalogue. */
+  vinyl?: boolean;
 }) {
   return (
     <section className="scanlines relative overflow-hidden border-b border-rule pb-16 pt-20 md:pb-24 md:pt-28">
+      {vinyl && <VinylBackdrop />}
       <div aria-hidden className="grid-rules pointer-events-none absolute inset-0 opacity-30" />
       <Container wide className="relative">
         <SectionLabel index={index}>{label}</SectionLabel>
