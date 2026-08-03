@@ -55,7 +55,7 @@ export function Header() {
                 key={href}
                 href={href}
                 className={clsx(
-                  "type-label transition-colors",
+                  "type-label text-[0.8125rem] transition-colors",
                   active ? "text-blood" : "text-dim hover:text-paper",
                 )}
               >
@@ -63,7 +63,7 @@ export function Header() {
               </Link>
             );
           })}
-          <LanguageSwitcher className="border-l border-rule pl-8" />
+          <LanguageSwitcher className="border-l border-rule pl-8 text-[0.8125rem]" />
         </nav>
 
         <button

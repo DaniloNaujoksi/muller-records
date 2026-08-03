@@ -29,10 +29,7 @@ export default async function ArtistsPage({ params }: { params: Promise<{ locale
 
       <section className="border-b border-rule py-20">
         <Container wide>
-          <h2 className="type-heading text-3xl md:text-4xl">{t("known")}</h2>
-          <div className="mt-10">
-            <ArtistGrid items={headlineArtists} />
-          </div>
+          <ArtistGrid items={headlineArtists} />
         </Container>
       </section>
 
