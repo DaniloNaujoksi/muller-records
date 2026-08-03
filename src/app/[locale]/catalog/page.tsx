@@ -39,7 +39,7 @@ export default async function CatalogPage({ params }: { params: Promise<{ locale
 
   return (
     <>
-      <PageHero index="02" label={t("label")} title={t("title")} lede={t("lede")} vinyl />
+      <PageHero index="02" label={t("label")} title={t("title")} />
 
       <section className="border-b border-rule py-20">
         <Container wide>

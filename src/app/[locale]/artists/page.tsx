@@ -4,7 +4,6 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/sections/PageHero";
 import { ArtistGrid, ArtistList } from "@/components/sections/ArtistGrid";
 import { artists, artistCount, headlineArtists } from "@/data/artists";
-import takkyu from "@/assets/photos/takkyu-ishino.jpg";
 
 export async function generateMetadata({
   params,
@@ -26,16 +25,7 @@ export default async function ArtistsPage({ params }: { params: Promise<{ locale
 
   return (
     <>
-      <PageHero
-        index="01"
-        label={t("label")}
-        title={t("title")}
-        lede={t("lede", { count: artistCount })}
-        photo={takkyu}
-        photoAlt={t("heroPhotoAlt")}
-        /* Takkyu's face sits about a third down the square frame. */
-        photoPosition="object-[center_32%]"
-      />
+      <PageHero index="01" label={t("label")} title={t("title")} />
 
       <section className="border-b border-rule py-20">
         <Container wide>

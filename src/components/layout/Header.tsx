@@ -30,12 +30,16 @@ export function Header() {
               every viewport. The head is the part that comes and goes: HeroLogo
               measures `header-mark-slot` to know where to dock, and hides it
               via `data-hero-logo` on <html> while the big mark is on screen.
+              The hidden slot also collapses to zero width, so the wordmark
+              starts flush at the gutter and slides right when the head
+              arrives. The slot's left edge is the gutter either way, which is
+              what keeps HeroLogo's measured dock target valid in both states.
               Everywhere outside the homepage the attribute never appears, so
               the full lockup shows from the start. */}
-          <span className="flex items-center gap-3">
+          <span className="flex items-center">
             <span
               id="header-mark-slot"
-              className="block transition-opacity duration-200 [[data-hero-logo]_&]:opacity-0"
+              className="block w-10 overflow-hidden transition-[width,margin,opacity] duration-200 [[data-hero-logo]_&]:mr-0 [[data-hero-logo]_&]:w-0 [[data-hero-logo]_&]:opacity-0 mr-3"
             >
               <LogoMark className="h-9" />
             </span>

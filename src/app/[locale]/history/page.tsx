@@ -9,7 +9,6 @@ import { artists } from "@/data/artists";
 import { LINKS } from "@/lib/constants";
 import tape from "@/assets/photos/beroshima-tape.jpeg";
 import recordsWall from "@/assets/photos/beroshima-records-wall.jpg";
-import ballet from "@/assets/photos/catastrophe-ballet-cover.jpg";
 
 export async function generateMetadata({
   params,
@@ -30,19 +29,7 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
 
   return (
     <>
-      <PageHero
-        index="03"
-        label={t("label")}
-        title={t("title")}
-        lede={t("lede")}
-        photo={ballet}
-        photoAlt={t("heroPhotoAlt")}
-        /* The kneeling figure sits just past the middle of the sleeve. */
-        photoPosition="object-[center_45%]"
-        /* Sepia sleeve, dark subject on bright sand — needs more than the
-           default to read as anything other than texture. */
-        photoOpacity="opacity-55"
-      />
+      <PageHero index="03" label={t("label")} title={t("title")} />
 
       <section className="border-b border-rule py-20 md:py-28">
         <Container wide>
