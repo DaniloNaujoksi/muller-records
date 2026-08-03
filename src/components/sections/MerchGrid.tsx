@@ -32,7 +32,7 @@ export function MerchGrid({ items }: { items: MerchItem[] }) {
   const locale = useLocale();
 
   return (
-    <ul className="grid grid-cols-2 gap-px border-t border-rule lg:grid-cols-3">
+    <ul className="grid grid-cols-2 gap-px border-t border-rule lg:grid-cols-4">
       {items.map((item) => {
         const price = formatPrice(item.priceCents, locale);
         const image = merchImage(item.id);
@@ -54,7 +54,7 @@ export function MerchGrid({ items }: { items: MerchItem[] }) {
                   <Image
                     src={image}
                     alt={item.title}
-                    sizes="(min-width: 1024px) 33vw, 50vw"
+                    sizes="(min-width: 1024px) 25vw, 50vw"
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                   />
                 ) : (
