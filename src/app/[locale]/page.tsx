@@ -38,7 +38,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <Hero />
       <StatBand />
 
-      <Section index="01" label={t("artists.label")}>
+      <StoryBlock />
+
+      <Section index="02" label={t("artists.label")}>
         <div className="flex flex-wrap items-end justify-between gap-6">
           <h2 className="type-heading max-w-4xl text-[clamp(2.25rem,6vw,5rem)]">
             {t("artists.title")}
@@ -53,7 +55,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
       <ImprintStrip />
 
-      <Section index="02" label={t("catalog.label")}>
+      <Section index="03" label={t("catalog.label")}>
         <div className="flex flex-wrap items-end justify-between gap-6">
           <h2 className="type-heading max-w-4xl text-[clamp(2.25rem,6vw,5rem)]">
             {t("catalog.title")}
@@ -75,7 +77,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </div>
       </Section>
 
-      <StoryBlock />
       <MerchTeaser />
     </>
   );
@@ -123,7 +124,7 @@ function ImprintStrip() {
   return (
     <section className="border-b border-rule bg-smoke py-24 md:py-32">
       <Container wide>
-        <SectionLabel index="01.5">{t("label")}</SectionLabel>
+        <SectionLabel index="02.5">{t("label")}</SectionLabel>
         <ul className="mt-12 grid gap-px md:grid-cols-2 lg:grid-cols-4">
           {order.map((key) => (
             <li key={key} className="border-t border-rule pt-6 md:border-r md:pr-6 md:last:border-r-0">
@@ -146,7 +147,7 @@ function StoryBlock() {
     <section className="border-b border-rule py-24 md:py-32">
       <Container wide>
         <Reveal>
-          <SectionLabel index="03">{t("label")}</SectionLabel>
+          <SectionLabel index="01">{t("label")}</SectionLabel>
           <blockquote className="type-heading mt-10 max-w-5xl text-[clamp(2rem,5.5vw,4.5rem)]">
             {t("quote")}
           </blockquote>
