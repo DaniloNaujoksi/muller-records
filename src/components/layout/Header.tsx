@@ -33,13 +33,13 @@ export function Header() {
               Everywhere outside the homepage the attribute never appears, so
               the full lockup shows from the start. */}
           <span className="flex items-center gap-3">
-            <LogoWordmark className="h-7" />
             <span
               id="header-mark-slot"
               className="block transition-opacity duration-200 [[data-hero-logo]_&]:opacity-0"
             >
               <LogoMark className="h-9" />
             </span>
+            <LogoWordmark className="h-7" />
           </span>
         </Link>
 
