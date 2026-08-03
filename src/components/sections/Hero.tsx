@@ -54,9 +54,6 @@ export function Hero() {
           <span className="block">Müller</span>
           <span className="block text-blood">Records</span>
         </h1>
-        <p className="mt-8 max-w-2xl text-base leading-relaxed text-dim md:text-lg">
-          {t("lede")}
-        </p>
       </Container>
 
       <Container wide className="relative">
