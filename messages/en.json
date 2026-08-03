@@ -69,7 +69,7 @@
     "title": "Artists",
     "lede": "{count} names have put a record or a remix out on a Muller imprint. Some of them define whole cities of this music.",
     "heroPhotoAlt": "Takkyu Ishino standing in a club, mirrorball light across the room behind him",
-    "known": "Names you already know",
+    "known": "Artists:",
     "everyone": "Everyone",
     "count": "{count} artists",
     "orderNote": "In the label's own order, running roughly through the catalogue's history rather than the alphabet."
@@ -225,6 +225,21 @@
       "press": {
         "title": "Press & licensing",
         "body": "Interviews, press assets, sync and licensing requests for the catalogue."
+      }
+    },
+    "composer": {
+      "hint": "The message opens in your own mail app — nothing is sent or stored on this page.",
+      "send": "Open in your mail app",
+      "copy": "Copy address",
+      "copied": "Copied",
+      "fields": {
+        "name": "Your / artist name",
+        "link": "Streaming link",
+        "date": "Date",
+        "city": "City",
+        "venue": "Venue & capacity",
+        "subject": "Subject",
+        "message": "Message"
       }
     }
   },
