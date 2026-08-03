@@ -1,0 +1,40 @@
+# Müller Records — statischer Export (Next.js "output: export").
+#
+# Der Export legt beide Sprachen unter ihren Routen-Ordnern ab:
+#   /en/...           englische Seiten
+#   /de/catalog/ ...  deutsche Seiten, aber mit englischen Ordnernamen
+#
+# Öffentlich verlinkt sind jedoch die schönen URLs (/katalog gibt es nicht,
+# Deutsch nutzt /de/katalog, Englisch läuft ganz ohne Präfix). Diese Datei
+# übersetzt die öffentlichen URLs auf die tatsächlichen Ordner. Sie ersetzt
+# damit die Next.js-Middleware (src/proxy.ts), die auf einem statischen
+# Webspace nicht läuft.
+#
+# Voraussetzung: Apache mit mod_rewrite, Installation im Webroot der Domain.
+
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Fehlender Slash am Ende: sichtbar umleiten, damit die URL kanonisch bleibt.
+RewriteRule ^(artists|catalog|contact|history|merch)$ /$1/ [R=301,L]
+RewriteRule ^de/(start|katalog|geschichte|kontakt)$ /de/$1/ [R=301,L]
+
+# /de ohne Startseite aufgerufen: zur deutschen Startseite.
+RewriteRule ^de/?$ /de/start/ [R=301,L]
+
+# Deutsche URLs intern auf die englischen Routen-Ordner mappen. Der Suffix
+# ($1) deckt auch die index.txt-Dateien ab, die Next bei Klick-Navigation
+# nachlädt — ohne diese Regeln bricht die Client-Navigation.
+RewriteRule ^de/start/(.*)$ /de/$1 [L]
+RewriteRule ^de/katalog/(.*)$ /de/catalog/$1 [L]
+RewriteRule ^de/geschichte/(.*)$ /de/history/$1 [L]
+RewriteRule ^de/kontakt/(.*)$ /de/contact/$1 [L]
+
+# Englisch hat kein URL-Präfix: Startseite und Seiten auf /en/ mappen.
+RewriteRule ^$ /en/ [L]
+RewriteRule ^(artists|catalog|contact|history|merch)/(.*)$ /en/$1/$2 [L]
+</IfModule>
