@@ -39,8 +39,8 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
             {[
               { href: LINKS.bandcampLabel, label: "Bandcamp" },
               { href: LINKS.residentAdvisor, label: "Resident Advisor" },
-              { href: LINKS.x, label: "X" },
               { href: LINKS.facebook, label: "Facebook" },
+              { href: LINKS.x, label: "X" },
             ].map(({ href, label }) => (
               <li key={label} className="border-b border-rule sm:border-r sm:last:border-r-0">
                 <a
