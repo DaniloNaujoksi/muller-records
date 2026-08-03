@@ -25,7 +25,19 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-rule bg-ink/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-[1800px] items-center justify-between px-6 md:px-10">
-        <Link href="/" className="shrink-0" onClick={() => setOpen(false)}>
+        <Link
+          href="/"
+          className="shrink-0"
+          onClick={(e) => {
+            setOpen(false);
+            // On the homepage the link would be a no-op — turn it into the
+            // way back up instead.
+            if (pathname === "/") {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
+        >
           {/* The wordmark is the permanent top-left brand, on every page and
               every viewport. The head is the part that comes and goes: HeroLogo
               measures `header-mark-slot` to know where to dock, and hides it
