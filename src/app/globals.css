@@ -19,8 +19,8 @@
   /* Greys, dark to light. Hairline rules live at --color-rule. */
   --color-smoke: #0a0a0a;
   --color-rule: #1f1f1f;
-  --color-mute: #6b6b6b;
-  --color-dim: #a3a3a3;
+  --color-mute: #8f8f8f;
+  --color-dim: #c6c6c6;
 
   --font-display: var(--font-archivo), "Helvetica Neue", Arial, sans-serif;
   --font-mono: var(--font-mono-jb), ui-monospace, "SF Mono", monospace;

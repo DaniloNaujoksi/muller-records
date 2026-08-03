@@ -20,25 +20,15 @@ import WordmarkSvg from "@/assets/logo-wordmark.svg";
 
 /** The head. Use alone wherever the wordmark would be unreadable. */
 export function LogoMark({ className }: { className?: string }) {
-  return <MarkSvg role="img" aria-label="Müller Records" className={clsx("block w-auto", className)} />;
-}
-
-/** "MÜLLER RECORDS" as drawn, not set in a typeface. Stacked, roughly 4.5:1. */
-export function LogoWordmark({ className }: { className?: string }) {
-  return <WordmarkSvg aria-hidden className={clsx("block w-auto", className)} />;
+  return <MarkSvg role="img" aria-label="Muller Records" className={clsx("block w-auto", className)} />;
 }
 
 /**
- * The lockup: head plus wordmark, as it appears on the sleeves. `compact` drops
- * the wordmark for tight spaces, and it is hidden below `sm` regardless.
+ * "MULLER RECORDS" as drawn, not set in a typeface. Stacked, roughly 4.5:1.
+ * The umlaut dots were removed from the asset on the label's call: the brand
+ * runs international as Muller Records, matching the domain; the umlaut stays
+ * reserved for Frank Müller the person.
  */
-export function Logo({ className, compact = false }: { className?: string; compact?: boolean }) {
-  return (
-    <span className={clsx("flex items-center gap-3", className)}>
-      <MarkSvg role="img" aria-label="Müller Records" className="block h-9 w-auto shrink-0" />
-      {/* Larger than the original lockup's ratio, where the wordmark is a sixth
-          of the head and would land at 6px here — unreadable in a header. */}
-      {!compact && <LogoWordmark className="hidden h-7 sm:block" />}
-    </span>
-  );
+export function LogoWordmark({ className }: { className?: string }) {
+  return <WordmarkSvg aria-hidden className={clsx("block w-auto", className)} />;
 }

@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "Müller Records",
+  name: "Muller Records",
   city: "Berlin",
   foundedYear: 1996,
   email: "info@mullerrecords.com",

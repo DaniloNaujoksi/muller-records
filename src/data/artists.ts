@@ -20,7 +20,10 @@ export type Artist = {
   name: string;
   /** City or country. Only where it is documented. */
   origin?: string;
-  /** One factual line on why the name matters. Never hype, never guessed. */
+  /**
+   * Labels or releases the name is tied to — nothing editorial. Frank's rule:
+   * where they live, and at most where else they have released.
+   */
   note?: string;
   /** Shown on the homepage: names a first-time visitor should recognise. */
   headline?: boolean;
@@ -30,7 +33,7 @@ export const artists: Artist[] = [
   {
     name: "Beroshima",
     origin: "Berlin",
-    note: "Frank Müller's own project, and the reason the label exists.",
+    note: "Frank Müller's own project.",
   },
   { name: "Robotnik" },
   { name: "Frank Muller", origin: "Berlin" },
@@ -53,7 +56,6 @@ export const artists: Artist[] = [
   {
     name: "Air Liquide",
     origin: "Cologne / Frankfurt",
-    note: "Ingmar Koch and Cem Oral. The acid end of German electronics.",
     headline: true,
   },
   { name: "Frank Heiss (R.I.P.)" },
@@ -64,7 +66,6 @@ export const artists: Artist[] = [
   {
     name: "Ulrich Schnauss",
     origin: "Berlin",
-    note: "Shoegaze in synth form. Recurring collaborator across the catalogue.",
     headline: true,
   },
   { name: "Autotune", origin: "Berlin" },
@@ -81,7 +82,6 @@ export const artists: Artist[] = [
   {
     name: "Electric Indigo",
     origin: "Vienna",
-    note: "Founded female:pressure in 1998.",
     headline: true,
   },
   { name: "Cassy", origin: "Vienna / Berlin" },
@@ -96,7 +96,6 @@ export const artists: Artist[] = [
   {
     name: "Claude Young",
     origin: "Detroit",
-    note: "Detroit second wave, one of the fastest hands to ever touch three decks.",
     headline: true,
   },
   { name: "Hiroaki Iizuka", origin: "Japan" },
@@ -105,19 +104,17 @@ export const artists: Artist[] = [
   {
     name: "John Selway",
     origin: "New York",
-    note: "New York techno, Disturbance and Sync Research.",
+    note: "Disturbance, Sync Research.",
     headline: true,
   },
   {
     name: "The Hacker",
     origin: "Grenoble",
-    note: "The electro-body axis of French techno.",
     headline: true,
   },
   {
     name: "Miss Kittin",
     origin: "Grenoble",
-    note: "The voice on a decade of electroclash records.",
     headline: true,
   },
   { name: "David Hausdorf" },
@@ -159,13 +156,12 @@ export const artists: Artist[] = [
   {
     name: "Kirk Degiorgio",
     origin: "London",
-    note: "As One, Applied Rhythmic Technology. Detroit's British correspondent.",
+    note: "As One, Applied Rhythmic Technology.",
   },
-  { name: "Tigerskin", origin: "Dresden", note: "Deep house with a techno spine." },
+  { name: "Tigerskin", origin: "Dresden" },
   {
     name: "Ken Ishii",
     origin: "Tokyo",
-    note: "The producer who put Japanese techno on the world map.",
     headline: true,
   },
   { name: "3 Tone Dorsal Fin" },
@@ -195,7 +191,7 @@ export const artists: Artist[] = [
   {
     name: "Marcel Dettmann",
     origin: "Berlin",
-    note: "Berghain resident, Ostgut Ton.",
+    note: "Ostgut Ton.",
     headline: true,
   },
   { name: "R-04", origin: "Japan" },
@@ -203,7 +199,7 @@ export const artists: Artist[] = [
   {
     name: "Westbam",
     origin: "Berlin",
-    note: "Low Spirit, Mayday, and half of what German techno means in public.",
+    note: "Low Spirit.",
     headline: true,
   },
   { name: "Henning Baer", origin: "Berlin" },

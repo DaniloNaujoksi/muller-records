@@ -12,13 +12,14 @@ import MarkSvg from "@/assets/logo-mark.svg";
  * no-recolouring rule in Logo.tsx still holds.
  *
  * On scroll the mark rides up with the page while shrinking around its
- * top-left corner. The hero gutter and the header gutter are the same
- * Container metrics, so at the moment the scaled height reaches the header
- * mark's 36px, the two are pixel-aligned — that is where we cross-fade to the
- * real header logo instead of pinning anything. While the big mark is on
- * screen, `data-hero-logo` on <html> keeps the header's copy hidden; the
- * attribute goes away when we dock, on unmount, and under reduced motion,
- * so every other page keeps its header logo untouched.
+ * top-left corner and drifting right, so that at the moment the scaled height
+ * reaches the header mark's 36px it sits exactly on `header-mark-slot` — the
+ * head's place beside the always-visible wordmark. That is where we
+ * cross-fade to the real header mark instead of pinning anything. While the
+ * big mark is on screen, `data-hero-logo` on <html> keeps the header's head
+ * hidden (the wordmark never hides); the attribute goes away when we dock, on
+ * unmount, and under reduced motion, so every other page keeps its full
+ * header lockup untouched.
  */
 export function HeroLogo() {
   const wrapRef = useRef<HTMLDivElement>(null);
@@ -30,7 +31,7 @@ export function HeroLogo() {
     if (reduced) return;
     const wrap = wrapRef.current;
     const inner = innerRef.current;
-    const slot = document.getElementById("header-logo-slot");
+    const slot = document.getElementById("header-mark-slot");
     if (!wrap || !inner || !slot) return;
 
     let pageTop = 0;
@@ -38,6 +39,7 @@ export function HeroLogo() {
     let targetTop = 0;
     let targetH = 36;
     let distance = 1;
+    let dx = 0;
 
     const measure = () => {
       const r = wrap.getBoundingClientRect();
@@ -47,13 +49,14 @@ export function HeroLogo() {
       targetTop = s.top;
       targetH = s.height;
       distance = Math.max(pageTop - targetTop, 1);
+      dx = s.left - r.left;
     };
 
     let dockedNow: boolean | null = null;
     const apply = () => {
       const p = Math.min(Math.max(window.scrollY / distance, 0), 1);
       const scale = 1 + (targetH / bigH - 1) * p;
-      inner.style.transform = `scale(${scale})`;
+      inner.style.transform = `translateX(${p * dx}px) scale(${scale})`;
       const d = p >= 1;
       if (d !== dockedNow) {
         dockedNow = d;

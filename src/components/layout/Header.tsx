@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { clsx } from "clsx";
 import { Menu, X } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
-import { Logo } from "@/components/ui/Logo";
+import { LogoMark, LogoWordmark } from "@/components/ui/Logo";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import type { AppPathname } from "@/i18n/routing";
 
@@ -26,14 +26,20 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-rule bg-ink/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-[1800px] items-center justify-between px-6 md:px-10">
         <Link href="/" className="shrink-0" onClick={() => setOpen(false)}>
-          {/* HeroLogo measures this slot to know where to dock, and hides it
+          {/* The wordmark is the permanent top-left brand, on every page and
+              every viewport. The head is the part that comes and goes: HeroLogo
+              measures `header-mark-slot` to know where to dock, and hides it
               via `data-hero-logo` on <html> while the big mark is on screen.
-              Everywhere outside the homepage the attribute never appears. */}
-          <span
-            id="header-logo-slot"
-            className="block transition-opacity duration-200 [[data-hero-logo]_&]:opacity-0"
-          >
-            <Logo />
+              Everywhere outside the homepage the attribute never appears, so
+              the full lockup shows from the start. */}
+          <span className="flex items-center gap-3">
+            <LogoWordmark className="h-7" />
+            <span
+              id="header-mark-slot"
+              className="block transition-opacity duration-200 [[data-hero-logo]_&]:opacity-0"
+            >
+              <LogoMark className="h-9" />
+            </span>
           </span>
         </Link>
 

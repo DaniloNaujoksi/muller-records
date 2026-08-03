@@ -53,7 +53,7 @@ export function Hero() {
       <Container wide className="relative">
         {/* The head carries the page; the name still has to exist for readers
             and crawlers, so it lives in a visually hidden h1. */}
-        <h1 className="sr-only">Müller Records</h1>
+        <h1 className="sr-only">Muller Records</h1>
         <HeroLogo />
       </Container>
 

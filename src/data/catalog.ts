@@ -36,7 +36,7 @@ export const imprints: Record<Imprint, { name: string; founded: number; note: st
     note: "The first imprint. Twenty records, and Toktok's debut single among them.",
   },
   muller: {
-    name: "Müller Records",
+    name: "Muller Records",
     founded: 1996,
     note: "The main line. Berlin techno with acid DNA, open to Detroit and Tokyo alike.",
   },
