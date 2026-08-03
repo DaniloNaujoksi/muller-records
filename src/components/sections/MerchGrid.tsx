@@ -22,7 +22,7 @@ export function MerchGrid({ items }: { items: MerchItem[] }) {
   const locale = useLocale();
 
   return (
-    <ul className="grid gap-px border-t border-rule sm:grid-cols-2 lg:grid-cols-3">
+    <ul className="grid grid-cols-2 gap-px border-t border-rule lg:grid-cols-3">
       {items.map((item) => {
         const price = formatPrice(item.priceCents, locale);
         const image = merchImage(item.id);
@@ -31,7 +31,7 @@ export function MerchGrid({ items }: { items: MerchItem[] }) {
           <li
             key={item.id}
             className={clsx(
-              "group flex flex-col border-b border-rule sm:border-r",
+              "group flex flex-col border-b border-r border-rule",
               item.soldOut && "opacity-55",
             )}
           >
@@ -40,7 +40,7 @@ export function MerchGrid({ items }: { items: MerchItem[] }) {
                 <Image
                   src={image}
                   alt={item.title}
-                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  sizes="(min-width: 1024px) 33vw, 50vw"
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
               ) : (
@@ -55,12 +55,12 @@ export function MerchGrid({ items }: { items: MerchItem[] }) {
               )}
             </div>
 
-            <div className="flex flex-1 flex-col p-6">
+            <div className="flex flex-1 flex-col p-4 sm:p-6">
               {item.catalog && <p className="type-label text-blood">{item.catalog}</p>}
-              <h3 className="type-heading mt-2 text-xl leading-tight">{item.title}</h3>
+              <h3 className="type-heading mt-2 text-base leading-tight sm:text-xl">{item.title}</h3>
               {item.artist && <p className="mt-2 text-sm text-mute">{item.artist}</p>}
 
-              <div className="mt-6 flex flex-1 items-end justify-between gap-4">
+              <div className="mt-6 flex flex-1 flex-wrap items-end justify-between gap-2 sm:gap-4">
                 <p className="type-label text-dim">{price ?? "—"}</p>
                 {item.soldOut ? (
                   <span className="type-label border border-rule px-4 py-2 text-mute">

@@ -18,7 +18,7 @@ export function ApparelGrid() {
   const locale = useLocale();
 
   return (
-    <ul className="grid gap-px border-t border-rule sm:grid-cols-2">
+    <ul className="grid grid-cols-2 gap-px border-t border-rule">
       {apparelProducts.map((product) => {
         const image = merchImage(product.id);
         const from = apparelFrom(product);
@@ -27,22 +27,22 @@ export function ApparelGrid() {
         return (
           <li
             key={product.colourway}
-            className={clsx("group flex flex-col border-b border-rule sm:border-r", allGone && "opacity-55")}
+            className={clsx("group flex flex-col border-b border-r border-rule", allGone && "opacity-55")}
           >
             <div className="scanlines relative aspect-4/3 overflow-hidden bg-smoke">
               {image && (
                 <Image
                   src={image}
                   alt={product.colourway}
-                  sizes="(min-width: 640px) 50vw, 100vw"
+                  sizes="50vw"
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
               )}
             </div>
 
-            <div className="flex flex-1 flex-col p-6">
+            <div className="flex flex-1 flex-col p-4 sm:p-6">
               <p className="type-label text-blood">{t("apparel.tee")}</p>
-              <h3 className="type-heading mt-2 text-2xl leading-tight">{product.colourway}</h3>
+              <h3 className="type-heading mt-2 text-lg leading-tight sm:text-2xl">{product.colourway}</h3>
               <p className="type-label mt-3 text-dim">
                 {from !== null ? formatPrice(from, locale) : t("soldOut")}
               </p>
