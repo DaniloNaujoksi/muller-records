@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
+import { HeroLogo } from "@/components/ui/HeroLogo";
 import { VinylBackdrop } from "@/components/ui/VinylBackdrop";
 import { SITE } from "@/lib/constants";
 import studio from "@/assets/photos/beroshima-studio.webp";
@@ -50,10 +51,10 @@ export function Hero() {
       </Container>
 
       <Container wide className="relative">
-        <h1 className="type-display text-[clamp(3.5rem,13vw,13rem)]">
-          <span className="block">Müller</span>
-          <span className="block text-blood">Records</span>
-        </h1>
+        {/* The head carries the page; the name still has to exist for readers
+            and crawlers, so it lives in a visually hidden h1. */}
+        <h1 className="sr-only">Müller Records</h1>
+        <HeroLogo />
       </Container>
 
       <Container wide className="relative">

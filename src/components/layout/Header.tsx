@@ -26,7 +26,15 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-rule bg-ink/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-[1800px] items-center justify-between px-6 md:px-10">
         <Link href="/" className="shrink-0" onClick={() => setOpen(false)}>
-          <Logo />
+          {/* HeroLogo measures this slot to know where to dock, and hides it
+              via `data-hero-logo` on <html> while the big mark is on screen.
+              Everywhere outside the homepage the attribute never appears. */}
+          <span
+            id="header-logo-slot"
+            className="block transition-opacity duration-200 [[data-hero-logo]_&]:opacity-0"
+          >
+            <Logo />
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label={t("primary")}>
