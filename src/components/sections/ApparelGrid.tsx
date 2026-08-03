@@ -3,6 +3,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { ArrowUpRight } from "lucide-react";
 import { clsx } from "clsx";
 import { apparelProducts, apparelFrom, formatPrice, merchImage } from "@/data/merch";
+import { MaybeBuyLink } from "./MerchGrid";
 
 /**
  * Shirts, one tile per colourway with the cuts and sizes as options underneath.
@@ -29,16 +30,19 @@ export function ApparelGrid() {
             key={product.colourway}
             className={clsx("group flex flex-col border-b border-r border-rule", allGone && "opacity-55")}
           >
-            <div className="scanlines relative aspect-4/3 overflow-hidden bg-smoke">
-              {image && (
-                <Image
-                  src={image}
-                  alt={product.colourway}
-                  sizes="50vw"
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                />
-              )}
-            </div>
+            {/* The photo goes where the first size still in stock goes. */}
+            <MaybeBuyLink href={product.variants.find((v) => !v.soldOut)?.buyUrl}>
+              <div className="scanlines relative aspect-4/3 overflow-hidden bg-smoke">
+                {image && (
+                  <Image
+                    src={image}
+                    alt={product.colourway}
+                    sizes="50vw"
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                  />
+                )}
+              </div>
+            </MaybeBuyLink>
 
             <div className="flex flex-1 flex-col p-4 sm:p-6">
               <p className="type-label text-blood">{t("apparel.tee")}</p>

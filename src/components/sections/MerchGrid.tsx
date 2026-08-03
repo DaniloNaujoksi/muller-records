@@ -17,6 +17,16 @@ import { LogoMark } from "@/components/ui/Logo";
  * Product photography stays in colour, unlike the press shots: these are sleeve
  * scans and garment photos where the actual colour is the thing being sold.
  */
+/** Wraps the tile photo in the buy link when there is one to go to. */
+export function MaybeBuyLink({ href, children }: { href?: string; children: React.ReactNode }) {
+  if (!href) return <>{children}</>;
+  return (
+    <a href={href} target="_blank" rel="noreferrer noopener" tabIndex={-1} aria-hidden>
+      {children}
+    </a>
+  );
+}
+
 export function MerchGrid({ items }: { items: MerchItem[] }) {
   const t = useTranslations("merch");
   const locale = useLocale();
@@ -35,25 +45,30 @@ export function MerchGrid({ items }: { items: MerchItem[] }) {
               item.soldOut && "opacity-55",
             )}
           >
-            <div className="scanlines relative aspect-square overflow-hidden bg-smoke">
-              {image ? (
-                <Image
-                  src={image}
-                  alt={item.title}
-                  sizes="(min-width: 1024px) 33vw, 50vw"
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                />
-              ) : (
-                <div className="flex h-full items-center justify-center">
-                  <LogoMark className="h-24 text-rule" />
-                </div>
-              )}
-              {item.variant && (
-                <span className="type-label absolute left-0 top-0 bg-ink/85 px-3 py-2 text-dim backdrop-blur-sm">
-                  {item.variant}
-                </span>
-              )}
-            </div>
+            {/* The photo links where the buy button goes. Hidden from the tab
+                order and readers: the button right underneath is the same
+                destination with a proper name. */}
+            <MaybeBuyLink href={item.soldOut ? undefined : item.buyUrl}>
+              <div className="scanlines relative aspect-square overflow-hidden bg-smoke">
+                {image ? (
+                  <Image
+                    src={image}
+                    alt={item.title}
+                    sizes="(min-width: 1024px) 33vw, 50vw"
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                  />
+                ) : (
+                  <div className="flex h-full items-center justify-center">
+                    <LogoMark className="h-24 text-rule" />
+                  </div>
+                )}
+                {item.variant && (
+                  <span className="type-label absolute left-0 top-0 bg-ink/85 px-3 py-2 text-dim backdrop-blur-sm">
+                    {item.variant}
+                  </span>
+                )}
+              </div>
+            </MaybeBuyLink>
 
             <div className="flex flex-1 flex-col p-4 sm:p-6">
               {item.catalog && <p className="type-label text-blood">{item.catalog}</p>}
